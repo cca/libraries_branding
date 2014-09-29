@@ -1,0 +1,8 @@
+# 360 Search Branding
+
+To change:
+
+- Login to Serials Solution Client Center at http://clientcenter.serialssolutions.com/CC/Login/Default.aspx
+- Select _Administration Console_ underneath _360 Search_
+- Select _Branding Options_
+- The _Edit_ button in the upper right allows you to make changes
