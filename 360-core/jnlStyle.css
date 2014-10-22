@@ -79,3 +79,50 @@ table td {
 .SS_ToolLabels strong {
     font-size: 13px;
 }
+
+/* @todo pretty much all of this
+should be in jnlStyle.css instead */
+.SS_TitleSearchForm,
+.SS_AtoZLinks,
+.SS_CategorySelector {
+    width: 660px;
+    padding: 15px;
+    margin: 5px auto;
+}
+hr {
+    display: none;
+}
+.SS_TitleSearchForm,
+.SS_CategorySelector {
+    background: #EEE;
+    border: 1px solid #777;
+}
+input[id="SS_CFocusTag"] {
+    border: 1px solid #CCC;
+    font-size: 13px;
+    height: 15px;
+    padding: 3px;
+    width: 300px;
+}
+select {
+    font-size: 12px;
+    width: 150px;
+}
+input[type="submit"] {
+    background: #CCC;
+    border: 1px solid #777;
+    color: #027;
+    font-size: 12px;
+    height: 22px;
+    padding: 0px 8px;
+    margin-left: 8px;
+}
+.SS_CategorySelector select {
+    width: auto;
+}
+table {
+    margin-right: 10px;
+}
+.SS_NoJournalFoundMsg {
+    color: #990000;
+}
