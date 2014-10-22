@@ -1,0 +1,13 @@
+{
+  "name": "360-core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch --style compressed --sourcemap=none main.scss:jnlStyle.css",
+    "build": "sass --style compress --sourcemap=none main.scss jnlStyle.css",
+    "push": "scp jnlStyle.css live:/usr/share/acquia-drupal6/css/"
+  },
+  "author": "phette23 <phette23@gmail.com> (http://phette.net/)",
+  "license": "MIT"
+}
