@@ -1,0 +1,31 @@
+// main.scss => compiles to jnlStyle.css
+// primary 360 core styles
+@import 'tags';
+@import 'ss';
+@import 'footer';
+
+.IndexHead {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #666;
+    text-align: left;
+}
+
+.LetterLinks {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.DBLinks {
+    font-size: 12px;
+}
+
+.SectionHead {
+    font-size: 14px;
+    text-align: left;
+}
+
+.HoldingsList {
+    font-size: small;
+}

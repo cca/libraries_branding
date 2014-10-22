@@ -1,0 +1,30 @@
+#footer-message {
+    color: #728bba;
+    font-size: 11px;
+    text-align: center;
+
+    #simpson {
+        color: #968668;
+    }
+}
+
+#ccalinks {
+    background-color: #eadfca;
+    border: 1px dotted #b8a47f;
+    margin: 3px 0;
+    padding: 3px 10px 3px 3px;
+    text-align: right;
+
+    // this won't be necessary after removal of ccatheme.css
+    a {
+        border: 0;
+        color: #444;
+        font-size: 11px;
+
+        &:hover {
+            background-color: #968668;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

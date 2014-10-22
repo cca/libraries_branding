@@ -1,0 +1,58 @@
+// _tags.scss
+// 360 Core styles related to HTML tags
+
+body {
+    font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+    margin: 0 auto;
+    width: 960px;
+}
+
+// overriding ccatheme.css mostly
+// not needed once we remove that
+a:link,
+a:visited {
+  border: 0;
+  text-decoration: none;
+}
+
+h2,
+h3 {
+    color: #666;
+    // @todo magical font sizes everywhere
+    // & far too many of them, reduce
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+}
+
+table {
+    clear: both;
+    margin-right: 10px;
+
+    td {
+        font-size: 12px;
+    }
+}
+
+hr {
+    display: none;
+}
+
+select {
+    font-size: 12px;
+}
+
+input[type="submit"] {
+    background: #ccc;
+    border: 1px solid #777;
+    color: #027;
+    font-size: 12px;
+    height: 22px;
+    margin-left: 8px;
+    padding: 0 8px;
+}

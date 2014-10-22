@@ -1,0 +1,77 @@
+// _ss.scss
+// Styles relying on the Serials Solution classes
+// which all look like ".SS_{{component}}"
+
+table.SS_EJPTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SS_CopyRightStatement {
+    display: none;
+}
+
+.SS_SkipNavigationLinks {
+    visibility: hidden;
+}
+
+.SS_TitleSearchForm {
+    background-color: #ccc;
+    padding: 15px;
+    border: 1px dotted #006;
+}
+
+.SS_AtoZLinks {
+    background-color: #eadfca;
+    padding: 15px;
+    border: 1px dotted #006;
+    font-size: 12px;
+}
+
+.SS_CategorySelector {
+    background-color: #ccc;
+    padding: 15px;
+    border: 1px dotted #006;
+    font-size: 12px;
+}
+
+.SS_ResultsNoteGroup {
+    font-size: 85%;
+}
+
+.SS_NoJournalFoundMsg {
+    color: #039;
+    font-weight: bold;
+}
+
+.SS_ToolLabels strong {
+    font-size: 13px;
+}
+
+.SS_TitleSearchForm,
+.SS_AtoZLinks,
+.SS_CategorySelector {
+    width: 660px;
+    padding: 15px;
+    margin: 5px auto;
+}
+
+.SS_TitleSearchForm,
+.SS_CategorySelector {
+    background: #eee;
+    border: 1px solid #777;
+}
+
+// @todo why is this an attribute selector?
+input[id="SS_CFocusTag"] {
+    border: 1px solid #ccc;
+    font-size: 13px;
+    height: 15px;
+    padding: 3px;
+    width: 300px;
+}
+
+.SS_NoJournalFoundMsg {
+    color: #900;
+}
+
