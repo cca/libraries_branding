@@ -2,16 +2,19 @@
 // 360 Core styles related to HTML tags
 
 body {
-    font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
     margin: 0 auto;
     width: 960px;
 }
 
-// overriding ccatheme.css mostly
-// not needed once we remove that
+body,
+div,
+p,
+span {
+    font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande";
+}
+
 a:link,
 a:visited {
-  border: 0;
   text-decoration: none;
 }
 
@@ -41,10 +44,6 @@ table {
 
 hr {
     display: none;
-}
-
-select {
-    font-size: 12px;
 }
 
 input[type="submit"] {

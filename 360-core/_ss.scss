@@ -2,18 +2,7 @@
 // Styles relying on the Serials Solution classes
 // which all look like ".SS_{{component}}"
 
-table.SS_EJPTable {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.SS_CopyRightStatement {
-    display: none;
-}
-
-.SS_SkipNavigationLinks {
-    visibility: hidden;
-}
+// .SS_PageBody wraps whole page except custom header
 
 .SS_TitleSearchForm {
     background-color: #ccc;
@@ -28,6 +17,13 @@ table.SS_EJPTable {
     font-size: 12px;
 }
 
+.SS_ResultsAtoZLinks {
+    // spacing between letters & custom header
+    margin-top: 1em;
+}
+
+// .SS_LetterLinks wraps A-Z list subsections like "Neb - New"
+
 .SS_CategorySelector {
     background-color: #ccc;
     padding: 15px;
@@ -35,12 +31,17 @@ table.SS_EJPTable {
     font-size: 12px;
 }
 
+// search result entry, wraps title & holdings info
+.SS_Holding {
+    margin-bottom: .4em;
+}
+
 .SS_ResultsNoteGroup {
     font-size: 85%;
 }
 
 .SS_NoJournalFoundMsg {
-    color: #039;
+    color: #900;
     font-weight: bold;
 }
 
@@ -71,7 +72,10 @@ input[id="SS_CFocusTag"] {
     width: 300px;
 }
 
-.SS_NoJournalFoundMsg {
-    color: #900;
+.SS_CopyRightStatement {
+    display: none;
 }
 
+.SS_SkipNavigationLinks {
+    visibility: hidden;
+}

@@ -1,1 +1,135 @@
-body{font-family:'Verdana', 'Arial', 'Helvetica', 'sans-serif';margin:0 auto;width:960px}a:link,a:visited{border:0;text-decoration:none}h2,h3{color:#666;font-size:14px;letter-spacing:1px;line-height:15px;text-align:center}h3{font-style:italic}table{clear:both;margin-right:10px}table td{font-size:12px}hr{display:none}select{font-size:12px}input[type="submit"]{background:#ccc;border:1px solid #777;color:#027;font-size:12px;height:22px;margin-left:8px;padding:0 8px}table.SS_EJPTable{margin-left:auto;margin-right:auto}.SS_CopyRightStatement{display:none}.SS_SkipNavigationLinks{visibility:hidden}.SS_TitleSearchForm{background-color:#ccc;padding:15px;border:1px dotted #006}.SS_AtoZLinks{background-color:#eadfca;padding:15px;border:1px dotted #006;font-size:12px}.SS_CategorySelector{background-color:#ccc;padding:15px;border:1px dotted #006;font-size:12px}.SS_ResultsNoteGroup{font-size:85%}.SS_NoJournalFoundMsg{color:#039;font-weight:bold}.SS_ToolLabels strong{font-size:13px}.SS_TitleSearchForm,.SS_AtoZLinks,.SS_CategorySelector{width:660px;padding:15px;margin:5px auto}.SS_TitleSearchForm,.SS_CategorySelector{background:#eee;border:1px solid #777}input[id="SS_CFocusTag"]{border:1px solid #ccc;font-size:13px;height:15px;padding:3px;width:300px}.SS_NoJournalFoundMsg{color:#900}#footer-message{color:#728bba;font-size:11px;text-align:center}#footer-message #simpson{color:#968668}#ccalinks{background-color:#eadfca;border:1px dotted #b8a47f;margin:3px 0;padding:3px 10px 3px 3px;text-align:right}#ccalinks a{border:0;color:#444;font-size:11px}#ccalinks a:hover{background-color:#968668;color:#fff;text-decoration:none}.IndexHead{font-size:13px;letter-spacing:1px;color:#666;text-align:left}.LetterLinks{font-size:12px;font-weight:bold;text-align:center}.DBLinks{font-size:12px}.SectionHead{font-size:14px;text-align:left}.HoldingsList{font-size:small}
+body {
+  margin: 0 auto;
+  width: 960px; }
+
+body, div, p, span {
+  font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande"; }
+
+a:link, a:visited {
+  text-decoration: none; }
+
+h2, h3 {
+  color: #666;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center; }
+
+h3 {
+  font-style: italic; }
+
+table {
+  clear: both;
+  margin-right: 10px; }
+table td {
+  font-size: 12px; }
+
+hr {
+  display: none; }
+
+input[type="submit"] {
+  background: #ccc;
+  border: 1px solid #777;
+  color: #027;
+  font-size: 12px;
+  height: 22px;
+  margin-left: 8px;
+  padding: 0 8px; }
+
+.SS_TitleSearchForm {
+  background-color: #ccc;
+  padding: 15px;
+  border: 1px dotted #006; }
+
+.SS_AtoZLinks {
+  background-color: #eadfca;
+  padding: 15px;
+  border: 1px dotted #006;
+  font-size: 12px; }
+
+.SS_ResultsAtoZLinks {
+  margin-top: 1em; }
+
+.SS_CategorySelector {
+  background-color: #ccc;
+  padding: 15px;
+  border: 1px dotted #006;
+  font-size: 12px; }
+
+.SS_Holding {
+  margin-top: .4em; }
+
+.SS_ResultsNoteGroup {
+  font-size: 85%; }
+
+.SS_NoJournalFoundMsg {
+  color: #900;
+  font-weight: bold; }
+
+.SS_ToolLabels strong {
+  font-size: 13px; }
+
+.SS_TitleSearchForm, .SS_AtoZLinks, .SS_CategorySelector {
+  width: 660px;
+  padding: 15px;
+  margin: 5px auto; }
+
+.SS_TitleSearchForm, .SS_CategorySelector {
+  background: #eee;
+  border: 1px solid #777; }
+
+input[id="SS_CFocusTag"] {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  height: 15px;
+  padding: 3px;
+  width: 300px; }
+
+.SS_CopyRightStatement {
+  display: none; }
+
+.SS_SkipNavigationLinks {
+  visibility: hidden; }
+
+#footer-message {
+  color: #728bba;
+  font-size: 11px;
+  text-align: center; }
+#footer-message #simpson {
+  color: #968668; }
+
+#ccalinks {
+  background-color: #eadfca;
+  border: 1px dotted #b8a47f;
+  margin: 3px 0;
+  padding: 3px 10px 3px 3px;
+  text-align: right; }
+#ccalinks a {
+  border: 0;
+  color: #444;
+  font-size: 11px; }
+#ccalinks a:hover {
+  background-color: #968668;
+  color: #fff;
+  text-decoration: none; }
+
+.IndexHead {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #666;
+  text-align: left; }
+
+.LetterLinks {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center; }
+
+.DBLinks {
+  font-size: 12px; }
+
+.SectionHead {
+  font-size: 14px;
+  text-align: left; }
+
+.HoldingsList {
+  font-size: small; }
