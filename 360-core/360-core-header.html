@@ -1,175 +1,95 @@
-<link type="text/css" rel="stylesheet" media="all" href="http://libraries.cca.edu/sites/all/modules/nice_menus/nice_menus.css?b" />
-<link type="text/css" rel="stylesheet" media="all" href="http://libraries.cca.edu/sites/all/modules/nice_menus/nice_menus_default.css?b" />
-<link type="text/css" rel="stylesheet" media="all" href="http://libraries.cca.edu/sites/all/themes/ccatheme/ccatheme.css?b" />
-
-<style type="text/css">
-
-#navbar {
-    float: left;
-    margin-top: 5px;
-        margin-bottom: 10px;
+<!-- @todo remove this extra style sheet, unnecessary -->
+<link rel="stylesheet" media="all" href="http://libraries.cca.edu/sites/all/themes/ccatheme/ccatheme.css?b" />
+<style>
+/* overriding style in above the puts margins on <li>s */
+#cca-header li {
+  margin: 0;
 }
 body {
-    margin-left: auto;
-margin-right: auto;
-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
 }
-a:link, a:visited{
-border: 0px;
-text-decoration: none;
+a:link,
+a:visited {
+  border: 0px;
+  text-decoration: none;
 }
-#content{
-margin: 0px;
+#footer-message {
+  float: left;
+  width: 960px;
+  font-size: 11px;
+  text-align: center;
+  color: #728BBA;
 }
-ul.nice-menu li, ul.nice-menu-down li ul li{
-width: 157px;
-}
-#logo{
-margin: 5px 10px 0px 0px;
-padding: 0px;
-float: left;
-height: 50px;
-width: 910px;
-}
-#footer-message{
-float: left;
-width: 960px;
-font-size: 11px;
-text-align: center;
-color: #728BBA;
-}
-
 #footer-message #simpson {
-color: #968668;
+  color: #968668;
 }
 #ccalinks {
-    float: left;
-    width: 950px;
-    color: #666;
-    font-size: 8px;
-    background-color: #eadfca;
-    text-align: right;
-    padding: 3px 10px 3px 3px;
-    margin: 3px 0px;
-    border: 1px dotted #b8a47f;
+  float: left;
+  width: 950px;
+  background-color: #eadfca;
+  text-align: right;
+  padding: 3px 10px 3px 3px;
+  margin: 3px 0px;
+  border: 1px dotted #b8a47f;
 }
 #ccalinks a {
-color: #444;
-font-size: 11px;
-border:none;
+  color: #444;
+  font-size: 11px;
+  border: none;
 }
 #ccalinks a:hover {
-color: #fff;
-font-size: 11px;
-background-color: #968668;
-text-decoration: none;
+  color: #fff;
+  background-color: #968668;
+  text-decoration: none;
 }
-
-.SS_TitleSearchForm, .SS_AtoZLinks, .SS_CategorySelector{
-width: 660px;
-padding: 15px;
-margin: 5px auto;
+/* @todo pretty much all of this
+should be in jnlStyle.css instead */
+.SS_TitleSearchForm,
+.SS_AtoZLinks,
+.SS_CategorySelector {
+  width: 660px;
+  padding: 15px;
+  margin: 5px auto;
 }
-
-hr {display: none;}
-
-.SS_TitleSearchForm, .SS_CategorySelector {
-background: #EEE;
-border: 1px solid #777;
-
+hr {
+  display: none;
+}
+.SS_TitleSearchForm,
+.SS_CategorySelector {
+  background: #EEE;
+  border: 1px solid #777;
 }
 input[id="SS_CFocusTag"] {
-border: 1px solid #CCC;
-font-size: 13px;
-height: 15px;
-padding: 3px;
-width: 300px;
+  border: 1px solid #CCC;
+  font-size: 13px;
+  height: 15px;
+  padding: 3px;
+  width: 300px;
 }
-
 select {
-font-size: 12px;
-width: 150px;
+  font-size: 12px;
+  width: 150px;
 }
 input[type="submit"] {
-background: #CCC;
-border: 1px solid #777;
-color: #027;
-font-size: 12px;
-height: 22px;
-padding: 0px 8px;
-margin-left: 8px;
+  background: #CCC;
+  border: 1px solid #777;
+  color: #027;
+  font-size: 12px;
+  height: 22px;
+  padding: 0px 8px;
+  margin-left: 8px;
 }
-.SS_CategorySelector select{
-width: 300px;
+.SS_CategorySelector select {
+  width: auto;
 }
-
 table {
-margin-right: 10px;
+  margin-right: 10px;
 }
 .SS_NoJournalFoundMsg {
-color: #990000;
+  color: #990000;
 }
 </style>
 
-<div id="header">
-  <div id="header-inner" class="clear-block">
-    <div id="logo-title">
-      <div id="logo"><a href="http://libraries.cca.edu" title="Home" rel="home"><img src="http://libraries.cca.edu/sites/default/files/ccatheme_logo.gif" alt="Home" id="logo-image" /></a>
-      </div>
-    </div> <!-- /#logo-title -->
-  </div>
-</div>
-
-<div id="navbar">
-  <div id="navbar-inner" class="clear-block region region-navbar">
-    <div id="block-nice_menus-1" class="block block-nice_menus region-odd odd region-count-1 count-1">
-
-    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-455" class="menuparent menu-path-node-3"><a href="http://libraries.cca.edu/info" title="About CCA Libraries">Library info</a><ul><li id="menu-477" class="menu-path-node-9"><a href="http://libraries.cca.edu/info/awards" title="Learn about the annual Library Research Award and Student Book Art Competition">Awards</a></li>
-<li id="menu-456" class="menu-path-node-4"><a href="http://libraries.cca.edu/info/faq" title="Frequently Asked Questions">FAQ</a></li>
-<li id="menu-458" class="menu-path-node-5"><a href="http://libraries.cca.edu/info/hours" title="Hours">Hours</a></li>
-<li id="menu-459" class="menuparent menu-path-node-6"><a href="http://libraries.cca.edu/info/policies" title="Library Policies">Policies</a></li>
-<li id="menu-462" class="menu-path-staff"><a href="http://libraries.cca.edu/staff" title="Staff">Staff</a></li>
-</ul>
-</li>
-<li id="menu-479" class="menuparent menu-path-node-11"><a href="http://libraries.cca.edu/collections" title="Collections">Library Collections</a>
-<ul><li id="menu-538" class="menu-path-node-41"><a href="http://libraries.cca.edu/articles" title="Article databases">Articles</a></li>
-<li id="menu-520" class="menu-path-library.cca.edu-search"><a href="http://library.cca.edu/search" title="Search the library catalog">Books, etc.</a></li>
-<li id="menu-541" class="menu-path-node-44"><a href="http://libraries.cca.edu/image-collections" title="Image databases">Images</a></li>
-<li id="menu-522" class="menu-path-ey7mr5fu9x.search.serialssolutions.com-"><a href="http://ey7mr5fu9x.search.serialssolutions.com/" title="Find journals by title">Journals</a></li>
-<li id="menu-542" class="menu-path-node-45"><a href="http://libraries.cca.edu/material-resource-center" title="New Materials Resource Center, San Francisco">Materials Library</a></li>
-<li id="menu-543" class="menu-path-node-46"><a href="http://libraries.cca.edu/reference" title="Reference sources: dictionaries and encyclopedias">Reference</a></li>
-<li id="menu-544" class="menu-path-node-47"><a href="http://libraries.cca.edu/special-collections" title="Archives and Special Collections">Special collections</a></li>
-<li id="menu-523" class="menu-path-library.cca.edu-screens-videosearch.html"><a href="http://library.cca.edu/screens/videosearch.html" title="Search for DVDs and VHS tapes on the library shelves">Videos</a></li>
-</ul>
-</li>
-<li id="menu-480" class="menuparent menu-path-node-12"><a href="http://libraries.cca.edu/online" title="Digital Collections" class="active">Online resources</a><ul><li id="menu-525" class="menu-path-proxy.cca.edu-loginurlvnweb.hwwilsonweb.com-hww-jumpstart.jhtmlprodARTFT"><a href="http://proxy.cca.edu/login?url=http://vnweb.hwwilsonweb.com/hww/jumpstart.jhtml?prod=ARTFT" title="Art &amp; design articles from magazines and journals">Art Full Text</a></li>
-<li id="menu-530" class="menu-path-proxy.cca.edu-loginurlwww.csa.com-htbin-dbrng.cgiusernameccacaccessccac23dbartbm-set-c"><a href="http://proxy.cca.edu/login?url=http://www.csa.com/htbin/dbrng.cgi?username=ccac&amp;access=ccac23&amp;db=artbm-set-c" title="Index of articles on contemporary and modern art">ARTbibliographies Modern</a></li>
-<li id="menu-532" class="menu-path-proxy.cca.edu-loginurlvnweb.hwwilsonweb.com-hww-jumpstart.jhtmlprodAVE"><a href="http://proxy.cca.edu/login?url=http://vnweb.hwwilsonweb.com/hww/jumpstart.jhtml?prod=AVE" title="Citation index for architectural periodicals">Avery Index</a></li>
-<li id="menu-534" class="menu-path-proxy.cca.edu-loginurlwww.csa.com-htbin-dbrng.cgiusernameccacaccessccac23dbdaai-set-c"><a href="http://proxy.cca.edu/login?url=http://www.csa.com/htbin/dbrng.cgi?username=ccac&amp;access=ccac23&amp;db=daai-set-c" title="Citation index for articles on craft and design">Design + Applied Arts Index</a></li>
-<li id="menu-526" class="menu-path-proxy.cca.edu-loginurlwww.jstor.org-search"><a href="http://proxy.cca.edu/login?url=http://www.jstor.org/search" title="Full text scholarly articles in the arts and humanities">JSTOR</a></li>
-<li id="menu-528" class="menu-path-proxy.cca.edu-loginurlinfotrac.galegroup.com-itweb-calartsdbLitRC"><a href="http://proxy.cca.edu/login?url=http://infotrac.galegroup.com/itweb/calarts?db=LitRC" title="Full text articles on authors, literature, and and writing">Literature Resource Center</a></li>
-<li id="menu-527" class="menu-path-proxy.cca.edu-loginurlvnweb.hwwilsonweb.com-hww-jumpstart.jhtmlprodOMNIS"><a href="http://proxy.cca.edu/login?url=http://vnweb.hwwilsonweb.com/hww/jumpstart.jhtml?prod=OMNIS" title="Articles on all topics from magazines and journals">OmniFile Full Text</a></li>
-<li id="menu-568" class="menu-path-node-12"><a href="http://libraries.cca.edu/online" title="">Show all</a></li>
-</ul>
-</li>
-<li id="menu-478" class="menuparent menu-path-node-10"><a href="http://libraries.cca.edu/learn" title="Search and Research Help">Learn how</a>
-<ul><li id="menu-506" class="menu-path-node-31"><a href="http://libraries.cca.edu/learn/citations" title="How to Cite">How to Cite</a></li>
-<li id="menu-510" class="menuparent menu-path-node-32"><a href="http://libraries.cca.edu/learn/research" title="Research Guides">Research guides</a></li>
-<li id="menu-482" class="menuparent menu-path-node-14"><a href="http://libraries.cca.edu/learn/search-help" title="Search Help">Search help</a>
-</li>
-<li id="menu-519" class="menu-path-libraries.cca.edu-libskills-lib-skills"><a href="http://libraries.cca.edu/libskills/lib-skills" title="">Library skills tutorial</a></li>
-</ul>
-</li>
-<li id="menu-481" class="menuparent menu-path-node-13"><a href="http://libraries.cca.edu/faculty" title="Faculty Resources">Faculty resources</a><ul><li id="menu-545" class="menuparent menu-path-node-48"><a href="http://libraries.cca.edu/faculty/policies" title="Library Policies for Faculty">Policies</a>
-</li>
-<li id="menu-547" class="menuparent menu-path-node-50"><a href="http://libraries.cca.edu/faculty/services" title="Library Services for Faculty">Services</a>
-</li>
-</ul>
-</li>
-<li id="menu-567" class="menu-path-node-65"><a href="http://libraries.cca.edu/other-libraries" title="Bay Area Libraries">Other libraries</a></li>
-</ul>
-    </div>
-  </div>
-</div>
-
-<table width="960"><tr><td align="right"><a href="http://ey7mr5fu9x.search.serialssolutions.com/">Journal Finder</a>&nbsp;|&nbsp;<a href="http://libraries.cca.edu">CCA Libraries home</a>&nbsp;</td></tr></table>
+<div id=cca-header><div class=logo></div><nav><input type=checkbox id=button><label for=button onclick></label><ul><li><a href="http://ey7mr5fu9x.search.serialssolutions.com/">Journal Finder</a></li><li><a href=http://libraries.cca.edu>Libraries</a></li><li><a href=http://library.cca.edu/search>Catalog</a></li><li><a href=http://libraries.cca.edu/online>Databases</a></li><li><a href=http://libguides.cca.edu>Study Guides</a></li></ul></nav></div><style>body{-webkit-animation:bugfix infinite 1s}@-webkit-keyframes bugfix{from{padding:0}to{padding:0}}#cca-header{width:100%}#cca-header .logo{background:url("//s3.amazonaws.com/libapps/accounts/21563/images/orange-logo.jpg") no-repeat;background-position-y:50%;background-size:contain;height:91px}#cca-header *{box-sizing:border-box}#cca-header input[type=checkbox]{position:absolute;top:-9999px;left:-9999px}#cca-header label{display:none;cursor:pointer;user-select:none}#cca-header nav{position:relative}#cca-header nav a,#cca-header nav label{color:#333;display:block;text-decoration:none;font:1.4em "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;transition:color .3s ease-in-out;padding:.55em}#cca-header nav label{padding:0}#cca-header nav a:visited{color:#333}#cca-header nav ul{padding:0;margin:0 auto;list-style:none}#cca-header nav ul>li{float:left;width:19.99%;background:#eadfca;text-align:center;transition-duration:.3s;transition-timing-function:ease-in-out;transition-property:box-shadow, color;cursor:pointer;border:0.1em solid #b8a47f}#cca-header nav ul>li:hover,#cca-header nav ul>li:active{background-color:#968668;border-color:#86714b;color:#fff}#cca-header nav ul>li:hover>a,#cca-header nav ul>li:active>a{color:#fff}@media screen and (max-width: 620px){#cca-header .logo{background:url("//s3.amazonaws.com/libapps/accounts/21563/images/orange-logo-620w.jpg") no-repeat;background-position-y:50%;background-size:contain;height:51px}}@media screen and (max-width: 44em){#cca-header nav ul{display:none;height:100%}#cca-header nav label{position:relative;display:block;min-height:2.25em;margin:0;border:0.05em solid #b8a47f;background:#eadfca}#cca-header nav label:after{position:absolute;right:.25em;top:0;content:"MENU";font-size:1.8em}#cca-header nav input[type=checkbox]:checked ~ label:after{color:#333}#cca-header nav input[type=checkbox]:checked ~ ul{display:block}#cca-header nav input[type=checkbox]:checked ~ ul>li{border:0.05em solid #b8a47f;width:100%;position:relative;opacity:.8;text-align:left}#cca-header nav input[type=checkbox]:checked ~ ul>li:after{position:absolute;right:.25em;top:.7em;content:"\232A";font:bold 1.4em sans-serif}}</style><script>document.createElement("nav");</script>
