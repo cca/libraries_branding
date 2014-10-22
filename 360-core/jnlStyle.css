@@ -1,98 +1,81 @@
-
-
-H2
-{
-	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
-    font-size: 14px;
-	letter-spacing: 1px;
-	line-height: 15px;
-	color: #666666;
-    TEXT-ALIGN: center;
-}
-.IndexHead
-{
-	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
-	font-size: 13px;
-    letter-spacing: 1px;
-	color: #666666;
-    TEXT-ALIGN: left;
-}
-.LetterLinks
-{
-	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
-    FONT-SIZE: 12px;
-    FONT-WEIGHT: bold;
-    TEXT-ALIGN: center;
-}
-
-H3
-{
+h2 {
     font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
     font-size: 14px;
-	letter-spacing: 1px;
-	line-height: 15px;
-	color: #666666;
-    TEXT-ALIGN: center;
-	font-style: italic;
+    letter-spacing: 1px;
+    line-height: 15px;
+    color: #666666;
+    text-align: center;
 }
-
-.DBLinks
-{
-    FONT-SIZE: 12px;
+.IndexHead {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #666666;
+    text-align: left;
 }
-.SectionHead
-{
-    FONT-SIZE: 14px;
-    TEXT-ALIGN: left;
+.LetterLinks {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
 }
-.HoldingsList
-{
-   font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
-    FONT-SIZE: small;
+h3 {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    color: #666666;
+    text-align: center;
+    font-style: italic;
 }
-
+.DBLinks {
+    font-size: 12px;
+}
+.SectionHead {
+    font-size: 14px;
+    text-align: left;
+}
+.HoldingsList {
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+    font-size: small;
+}
 table.SS_EJPTable {
-    margin-left:auto; 
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-.SS_CopyRightStatement{
-	display:none;
+.SS_CopyRightStatement {
+    display: none;
 }
-
-.SS_TitleSearchForm{
-background-color: #ccc;
-padding: 15px;
-border: 1px dotted #000066;
+.SS_TitleSearchForm {
+    background-color: #ccc;
+    padding: 15px;
+    border: 1px dotted #000066;
 }
-
 .SS_AtoZLinks {
-background-color: #eadfca;
-padding: 15px;
-border: 1px dotted #000066;
-font-size: 12px;
+    background-color: #eadfca;
+    padding: 15px;
+    border: 1px dotted #000066;
+    font-size: 12px;
 }
-
 .SS_CategorySelector {
-background-color: #ccc;
-padding: 15px;
-border: 1px dotted #000066;
-font-size: 12px;
+    background-color: #ccc;
+    padding: 15px;
+    border: 1px dotted #000066;
+    font-size: 12px;
 }
 .SS_ResultsNoteGroup {
-font-size: 85%;
+    font-size: 85%;
 }
 .SS_NoJournalFoundMsg {
-color: #003399;
-font-weight: bold;
+    color: #003399;
+    font-weight: bold;
 }
 table {
-clear: both;
+    clear: both;
 }
 table td {
-font-size: 12px;
+    font-size: 12px;
 }
-.SS_ToolLabels strong{
-font-size: 13px;
+.SS_ToolLabels strong {
+    font-size: 13px;
 }
