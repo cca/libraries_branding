@@ -1,0 +1,28 @@
+#!/usr/bin/env fish
+# date format ProQuest wants us to use
+set curdate (date "+%F-%H-%M-%S")
+
+set_color --bold
+echo "what type of upload is this? (full, updates, deletes)"
+set_color normal
+read -p "echo -n 'type: '" type
+
+# construct appropriate file name from info we have
+set newfilename cca-catalog-$type-$curdate.mrc
+
+set_color --bold
+echo "where's the MARC file at?"
+set_color normal
+read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Downloads/" filename
+
+set_color --bold
+cp -v $filename $newfilename
+or exit 1
+
+echo "once connected, paste this into the prompt:"
+echo "put $newfilename $type"
+echo "...connecting to ProQuest, you'll be asked for CCA's password..."
+
+set_color normal
+# summon is an SSH alias
+sftp summon
