@@ -8,3 +8,4 @@ The included `upcat` script helps with FTP-ing catalog updates to ProQuest.
 
 See Matthew Reidsma's [Summon work at GVSU](https://github.com/gvsulib/Summon-2.0-Scripts) for ideas.
 
+Use `make` to compile & minify the JavaScript.
