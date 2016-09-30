@@ -13,7 +13,7 @@ set newfilename cca-catalog-$type-$curdate.mrc
 set_color --bold
 echo "where's the MARC file at?"
 set_color normal
-read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Downloads/" filename
+read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Code/libraries-branding/summon/marc" filename
 
 set_color --bold
 cp -v $filename $newfilename
