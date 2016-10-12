@@ -13,16 +13,14 @@ set newfilename cca-catalog-$type-$curdate.mrc
 set_color --bold
 echo "where's the MARC file at?"
 set_color normal
-read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Code/libraries-branding/summon/marc" filename
+read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Code/libraries-branding/summon/" filename
 
 set_color --bold
 cp -v $filename $newfilename
 or exit 1
 
-echo "once connected, paste this into the prompt:"
-echo "put $newfilename $type"
-echo "...connecting to ProQuest, you'll be asked for CCA's password..."
+cat .password | pbcopy
+echo "run the commands below to upload to Summon, the SFTP password is on your clipboard"
+echo "sftp summon; put $newfilename $type"
 
 set_color normal
-# summon is an SSH alias
-sftp summon
