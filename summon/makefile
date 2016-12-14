@@ -11,6 +11,6 @@ css :
 js :
 	babel --presets latest summon.js | uglifyjs --compress --mangle --screw-ie8 > summon.min.js
 
+# assumes an SSH alias of "live" for the server where you want to put the script
 push :
-	# assumes an SSH alias of "live" for the server where you want to put the script
 	rsync -avz summon.min.* live:~/libraries.cca.edu/summon
