@@ -1,10 +1,9 @@
+// load CSS adjustments
+$('head').append('<link rel="stylesheet" type="text/css" href="https://libraries.cca.edu/summon/summon.min.css">')
+
 // adjust main logo size/spacing on large screens
 $('div[size="large"] .logo')
     .attr('src', 'https://s3.amazonaws.com/libapps/accounts/21563/images/orange-logo-620w.jpg')
-    .css('margin-top', '10em')
-
-// links menu background color is too light for white font
-$('#linksMenu').css('background', '#777')
 
 // course reserves suggestion
 // course code pattern: five capital letters preceded either by nothing or whitespace

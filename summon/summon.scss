@@ -1,0 +1,9 @@
+// main logo size/spacing on large screens
+div[size="large"] .logo {
+    margin-top: 10em;
+}
+
+// links menu background color is too light for white font
+#linksMenu {
+    background: #777;
+}
