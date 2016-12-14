@@ -14,7 +14,7 @@ div[size="large"] .logo {
 .quickFilters span.ng-binding,
 // the drawer of extra filters that apepars when "more..." is selected
 // "a >" needed to avoid the .count span of numbers
-.moreFacetsContainer a > span.ng-binding
+.moreFacetsContainer a > span.ng-binding,
 // for all facets below
 .facetName {
     color: #06c;
