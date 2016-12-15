@@ -5,6 +5,9 @@ $('head').append('<link rel="stylesheet" type="text/css" href="https://libraries
 $('div[size="large"] .logo')
     .attr('src', 'https://s3.amazonaws.com/libapps/accounts/21563/images/orange-logo-620w.jpg')
 
+// highlight the "did you mean" box more, combines with styles in custom CSS
+$('.didYouMean').addClass('alert alert-warning')
+
 // course reserves suggestion
 // course code pattern: five capital letters preceded either by nothing or whitespace
 // followed either by nothing, whitespace, or a hyphen (e.g. PHOTO-101)

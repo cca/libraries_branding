@@ -3,6 +3,17 @@ div[size="large"] .logo {
     margin-top: 10em;
 }
 
+// "did you mean" styles, larger font & more focal
+// second class selector for specificity
+.didYouMean.alert {
+    // copied from .alert-warning class
+    border-bottom-color: #faebcc;
+    font-size: 16px;
+    font-weight: bold;
+    // copied from .alert
+    padding: 15px;
+}
+
 // links menu background color is too light for white font
 #linksMenu {
     background: #777;
