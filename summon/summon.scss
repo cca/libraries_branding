@@ -5,6 +5,12 @@ div[size="large"] .logo {
     margin-top: 10em;
 }
 
+// "advanced" link in header is white font
+// which is too light over light gray background
+.siteHeader .btn {
+    color: #555;
+}
+
 // "did you mean" styles, larger font & more focal
 // ID selector for specificity
 #ng-app .didYouMean {

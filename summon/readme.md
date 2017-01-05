@@ -8,6 +8,7 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 
 - CCA teal `#00bfb3` for "Authentication Banner Background Color"
 - light gray `#e4e8eb` for "Header Background Color"
+- darker gray `#555` for the header link styles
 
 ## Notes
 
