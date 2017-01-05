@@ -1,0 +1,34 @@
+/* CCA rebranded colors circa late 2016 */
+/* this is our primary color, should be present in most CCA logos */
+.main-teal {
+    color: #00bfb3;
+}
+.light-gray {
+    color: #e4e8eb;
+}
+.dark-gray {
+    color: #888b8d;
+}
+/* kinda brownish-gray */
+.warm-gray {
+    color: #6E6259;
+}
+/* pretty sure "red" is actually orange... */
+.red {
+    color: #cf4520;
+}
+.purple {
+    color: #5C068C;
+}
+.green {
+    color: #B7BF10;
+}
+.blue {
+    color: #005776;
+}
+.pink {
+    color: #F1BDC8;
+}
+.yellow {
+    color: #FED141;
+}
