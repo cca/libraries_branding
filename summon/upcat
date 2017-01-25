@@ -7,20 +7,37 @@ echo "what type of upload is this? (full, updates, deletes)"
 set_color normal
 read -p "echo -n 'type: '" type
 
+# assist with filename prompt below as I use same names for each type
+set export ''
+switch $type
+    case 'deletes'
+        # just a CSV export from a Koha report
+        set export 'deletes.csv'
+    case 'updates'
+        # this is the default file name for MARC exports from Koha
+        set export 'koha.mrc'
+    case 'full'
+        set export 'koha.mrc'
+    case '*'
+    # not a valid type
+        echo "Error: $type is not a valid type (full, updates, deletes)" > /dev/stderr
+        exit 1
+end
+
 # construct appropriate file name from info we have
 set newfilename cca-catalog-$type-$curdate.mrc
 
 set_color --bold
 echo "where's the MARC file at?"
 set_color normal
-read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Code/libraries-branding/summon/" filename
+read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Code/libraries-branding/summon/$export" filename
 
 set_color --bold
 cp -v $filename $newfilename
 or exit 1
 
-cat .password | pbcopy
-echo "run the commands below to upload to Summon, the SFTP password is on your clipboard"
+echo "put $newfilename $type" | pbcopy
+echo "run the commands below to upload to Summon, it has been copied to your clipboard"
 echo "sftp summon; put $newfilename $type"
 
 set_color normal
