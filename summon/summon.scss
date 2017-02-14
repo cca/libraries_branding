@@ -37,3 +37,9 @@ div[size="large"] .logo {
         text-decoration: underline;
     }
 }
+
+// hide the right-side links in formatted citation lists
+// they make copy-pasting into documents difficult
+li[ng-repeat="citation in citations"] a {
+    display: none !important;
+}
