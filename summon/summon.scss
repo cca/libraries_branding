@@ -44,7 +44,26 @@ li[ng-repeat="citation in citations"] a {
     display: none !important;
 }
 
+// "clear filters" container
 .clearRefinementsContainer {
-    padding: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    background-color: #f6693f;
 }
-
+// "clear filters" button
+.clearRefinementsContainer .customPrimaryLink .closeBtn {
+    background: #f6693f !important;
+    color: white !important;
+    box-sizing: border-box;
+    border: 1px white solid;
+}
+// "clear filters" button hover 
+.clearRefinementsContainer .customPrimaryLink:hover .closeBtn, .clearRefinementsContainer .customPrimaryLink:active .closeBtn {
+    background: white !important;
+    color: #f6693f !important;
+}
+// "clear filters" text
+.clearRefinementsContainer .ng-binding {
+    color: white;
+    font-size: 15px;
+}
