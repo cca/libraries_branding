@@ -62,8 +62,12 @@ li[ng-repeat="citation in citations"] a {
     background: white !important;
     color: #f6693f !important;
 }
-// "clear filters" text
+// "clear filters" text larger font size
 .clearRefinementsContainer .ng-binding {
     color: white;
     font-size: 15px;
+}
+// "clear filters" no underline on hover
+a.clearRefinements.customPrimaryLink {
+    text-decoration: none;
 }
