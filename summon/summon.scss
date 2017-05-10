@@ -43,3 +43,8 @@ div[size="large"] .logo {
 li[ng-repeat="citation in citations"] a {
     display: none !important;
 }
+
+.clearRefinementsContainer {
+    padding: 2em;
+}
+
