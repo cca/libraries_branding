@@ -43,3 +43,36 @@ div[size="large"] .logo {
 li[ng-repeat="citation in citations"] a {
     display: none !important;
 }
+
+// "clear filters" container
+.clearRefinementsContainer {
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+
+    // "clear filters" button
+    .customPrimaryLink .closeBtn {
+        background: #cf4520 !important;
+        color: white !important;
+        box-sizing: border-box;
+        border: 1px white solid;
+    }
+
+    // "clear filters" button hover
+    .customPrimaryLink:hover .closeBtn,
+    .customPrimaryLink:active .closeBtn {
+        background: white !important;
+        color: #cf4520 !important;
+    }
+
+    // "clear filters" text larger font size
+    .ng-binding {
+        color: #cf4520;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+// "clear filters" no underline on hover
+a.clearRefinements.customPrimaryLink {
+    text-decoration: none;
+}
