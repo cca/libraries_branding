@@ -37,7 +37,7 @@ cp -v $filename $newfilename
 or exit 1
 
 echo "put $newfilename $type" | pbcopy
-echo "run the commands below to upload to Summon, it has been copied to your clipboard"
-echo "sftp summon; put $newfilename $type"
+echo "run the command below to upload to Summon (the SFTP cmd is on your clipboard)"
+echo "sftp summon < pbpaste"
 
 set_color normal
