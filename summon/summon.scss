@@ -51,22 +51,23 @@ li[ng-repeat="citation in citations"] a {
 
     // "clear filters" button
     .customPrimaryLink .closeBtn {
-        background: #cf4520 !important;
+        background: #f6693f !important;
         color: white !important;
         box-sizing: border-box;
-        border: 1px white solid;
+        border: solid 2px #f6693f;
     }
 
     // "clear filters" button hover
     .customPrimaryLink:hover .closeBtn,
     .customPrimaryLink:active .closeBtn {
         background: white !important;
-        color: #cf4520 !important;
+        color: #f6693f !important;
+        border: solid 2px #f6693f;
     }
 
     // "clear filters" text larger font size
     .ng-binding {
-        color: #cf4520;
+        color: #f6693f;
         font-size: 15px;
         font-weight: bold;
     }
@@ -94,4 +95,10 @@ a.clearRefinements.customPrimaryLink {
     border-bottom: 4px solid #000;
     border-top: 0;
     vertical-align: super;
+}
+
+// even the top/bottom space around "clear filter" btn
+.clearRefinementsContainer {
+    padding-top: 1.5em;
+    padding-bottom: 0em;
 }
