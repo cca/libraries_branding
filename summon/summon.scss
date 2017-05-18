@@ -102,3 +102,20 @@ a.clearRefinements.customPrimaryLink {
     padding-top: 1.5em;
     padding-bottom: 0em;
 }
+
+
+// "apply" filter button
+a.btn.btn-primary.applyBtn.ng-binding {
+    color: white;
+    background-color: #69a74c;
+    border: solid #69a74c 1px;
+}
+
+// "apply" filter button color reversed on hover
+a.btn.btn-primary.applyBtn:hover .ng-binding,
+a.btn.btn-primary.applyBtn:active .ng-binding{
+    color: #69a74c;
+    background-color: white;
+    border: solid #69a74c 2px;
+}
+
