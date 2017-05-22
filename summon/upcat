@@ -38,6 +38,6 @@ or exit 1
 
 echo "put $newfilename $type" | pbcopy
 echo "run the command below to upload to Summon (the SFTP cmd is on your clipboard)"
-echo "sftp summon < pbpaste"
+echo "pbpaste | sftp summon"
 
 set_color normal
