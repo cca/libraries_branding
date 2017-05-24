@@ -113,12 +113,20 @@ a.btn.btn-primary.applyBtn.ng-binding {
 
 // "apply" filter button color reversed on hover
 a.btn.btn-primary.applyBtn:hover {
-    color: white;
-    background-color: #518837;
-    border: solid #518837 1px;
+    color: white !important;
+    background-color: #518837 !important;
+    border: solid #518837 1px !important;
 }
 
 // "apply" filter button box shadow when active
 a.btn.btn-primary.applyBtn:active {
     box-shadow: inset 0 5px 15px rgba(0,0,0,0.150);
 }
+
+// "apply" button when close....
+a.btn.btn-primary.applyBtn.ng-scope {
+    color: white;
+    background-color: #69a74c;
+    border: solid #69a74c 1px;
+}
+
