@@ -1,11 +1,14 @@
 #!/usr/bin/env fish
+
+if not count $argv >/dev/null
+    echo 'need upload type parameter (full, updates, deletes)'
+    exit 1
+else
+    set type $argv[1]
+end
+
 # date format ProQuest wants us to use
 set curdate (date "+%F-%H-%M-%S")
-
-set_color --bold
-echo "what type of upload is this? (full, updates, deletes)"
-set_color normal
-read -p "echo -n 'type: '" type
 
 # assist with filename prompt below as I use same names for each type
 set export ''
@@ -30,7 +33,7 @@ set newfilename cca-catalog-$type-$curdate.mrc
 set_color --bold
 echo "where's the MARC file at?"
 set_color normal
-read --shell -p "echo -n 'path: '" -c "/Users/ephetteplace/Code/libraries-branding/summon/$export" filename
+read --shell -c "/Users/ephetteplace/Code/libraries-branding/summon/$export" filename
 
 set_color --bold
 cp -v $filename $newfilename
