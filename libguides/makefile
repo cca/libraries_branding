@@ -2,7 +2,7 @@ all : js sass
 
 # need to have uglify installed globally
 js :
-	uglifyjs --compress --mangle --screw-ie8 main.js >> main.min.js
+	npx uglifyjs --compress --mangle main.js >> main.min.js
 
 #  need to have sass installed globally
 sass :

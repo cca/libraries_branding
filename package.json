@@ -1,0 +1,14 @@
+{
+  "name": "libraries-branding",
+  "version": "1.0.0",
+  "description": "A lot of the library's third-party products provide some modest custom branding opportunities. This repository simply collects header/footer HTML, styles, widgets, etc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cca/libraries_branding.git"
+  },
+  "author": "phette23 <phette23@gmail.com> (http://phette.net)",
+  "license": "ECL-2.0",
+  "devDependencies": {
+    "uglify-js": "^3.0.28"
+  }
+}
