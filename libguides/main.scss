@@ -10,11 +10,11 @@ body {
 // custom, responsive logo sizing
 #cca-header {
     cursor: pointer;
-    margin: auto;
+    margin: 1em auto auto;
     padding: 0;
 
     .logo {
-        background: url("//s3.amazonaws.com/libapps/accounts/21563/images/orange-logo.jpg") no-repeat;
+        background: url("//libapps.s3.amazonaws.com/sites/2210/banner/libguide-logo-fa17.png") no-repeat;
         background-position-y: 50%;
         background-size: contain;
         height: 81px;
@@ -23,9 +23,6 @@ body {
 
 @media screen and (max-width: 620px) {
     #cca-header .logo {
-        background: url("//s3.amazonaws.com/libapps/accounts/21563/images/orange-logo-620w.jpg") no-repeat;
-        background-position-y: 50%;
-        background-size: contain;
         height: 51px
     }
 }
