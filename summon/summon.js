@@ -1,5 +1,6 @@
 (function(d) {
-    d.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        console.log('dom content loaded')
         let css = d.createElement('link')
         css.setAttribute('rel', 'stylesheet')
         css.setAttribute('type', 'text/css')
@@ -10,5 +11,5 @@
         // adjust main logo size/spacing on large screens
         d.querySelector('div[size="large"] .logo')
             .setAttribute('src', 'https://libapps.s3.amazonaws.com/sites/2210/banner/libguide-logo-fa17.png')
-    })
+    }, 500)
 })(document)
