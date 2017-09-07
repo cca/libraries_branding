@@ -1,14 +1,9 @@
+@import 'colors.scss';
 @import 'alert.scss';
 
 // main logo size/spacing on large screens
 div[size="large"] .logo {
     margin-top: 10em;
-}
-
-// "advanced" link in header is white font
-// which is too light over light gray background
-.siteHeader .btn {
-    color: #555;
 }
 
 // "did you mean" styles, larger font & more focal
@@ -51,23 +46,23 @@ li[ng-repeat="citation in citations"] a {
 
     // "clear filters" button
     .customPrimaryLink .closeBtn {
-        background: #f6693f !important;
+        background: $cca-teal !important;
         color: white !important;
         box-sizing: border-box;
-        border: solid 2px #f6693f;
+        border: solid 2px $cca-teal;
     }
 
     // "clear filters" button hover
     .customPrimaryLink:hover .closeBtn,
     .customPrimaryLink:active .closeBtn {
         background: white !important;
-        color: #f6693f !important;
-        border: solid 2px #f6693f;
+        color: $cca-teal !important;
+        border: solid 2px $cca-teal;
     }
 
     // "clear filters" text larger font size
     .ng-binding {
-        color: #f6693f;
+        color: $cca-teal;
         font-size: 15px;
         font-weight: bold;
     }
@@ -91,6 +86,7 @@ a.clearRefinements.customPrimaryLink {
     vertical-align: middle;
     width: 0;
 }
+
 .facetField.collapsible h3 a[aria-pressed="false"]::after {
     border-bottom: 4px solid #000;
     border-top: 0;
@@ -103,12 +99,11 @@ a.clearRefinements.customPrimaryLink {
     padding-bottom: 0em;
 }
 
-
 // "apply" filter button
 a.btn.btn-primary.applyBtn.ng-binding {
-    color:white;
-    background-color:#69a74c;
-    border:solid #69a74c 1px;
+    color: white;
+    background-color: #69a74c;
+    border: solid #69a74c 1px;
 }
 
 // "apply" filter button color reversed on hover
@@ -129,4 +124,3 @@ a.btn.btn-primary.applyBtn.ng-scope {
     background-color: #69a74c;
     border: solid #69a74c 1px;
 }
-
