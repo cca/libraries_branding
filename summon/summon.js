@@ -1,11 +1,11 @@
 function init() {
     $(document).ready(() => {
         // load CSS adjustments
-        $('head').append('<link rel="stylesheet" type="text/css" href="https://libraries.cca.edu/summon/summon.min.css">')
+        $('head').append('<link rel="stylesheet" type="text/css" href="https://libraries.cca.edu/static/summon/summon.min.css">')
 
         // adjust main logo size/spacing on large screens
         $('div[size="large"] .logo')
-            .attr('src', 'https://s3.amazonaws.com/libapps/accounts/21563/images/orange-logo-620w.jpg')
+            .attr('src', 'https://libapps.s3.amazonaws.com/sites/2210/banner/libguide-logo-fa17.png')
     })
 }
 
