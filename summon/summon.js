@@ -1,6 +1,5 @@
 (function(d) {
     setTimeout(() => {
-        console.log('dom content loaded')
         let css = d.createElement('link')
         css.setAttribute('rel', 'stylesheet')
         css.setAttribute('type', 'text/css')
