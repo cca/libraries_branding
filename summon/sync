@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+STATIC_DIR='/opt/libraries_wagtail/libraries/libraries/static'
+rsync -avz --progress summon.min.js summon.min.css live:$STATIC_DIR/summon
