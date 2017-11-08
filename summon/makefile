@@ -13,4 +13,4 @@ js :
 
 # assumes an SSH alias of "live" for the server where you want to put the script
 push :
-	rsync -avz summon.min.* live:~/libraries.cca.edu/summon
+	rsync -avz summon.min.* live:~/wagtail/libraries/libraries/static/summon
