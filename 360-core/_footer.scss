@@ -3,3 +3,10 @@
     margin: 1em;
     text-align: center;
 }
+
+// override some dumb default styles like gray background & position: absolute
+#footer {
+    background: 0;
+    height: auto;
+    position: static;
+}
