@@ -5,7 +5,7 @@ $(document).on('click', '#s-lg-index-subject-btn', function(){
         // modified from https://matthew.reidsrow.com/worknotes/184
 
         // Make sure you are on the homepage
-        if($('#s-lg-index-list').length > 0) {
+        if ($('#s-lg-index-list').length > 0) {
 
         	// Loop through all the subjects
         	$('#s-lg-index-cols').find('div.panel.panel-default').each(function() {
