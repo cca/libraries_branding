@@ -2,12 +2,10 @@ all : build push
 
 build : css js
 
-# requires ruby's sass gem installed globally
+# requires ruby's sass gem installed globally @TODO just use node-sass
 css :
 	sass --style=compressed --sourcemap=none summon.scss > summon.min.css
 
-# require's npm's babel-cli & uglify-js installed globally
-# and babel-preset-latest _installed locally_
 js :
 	npx babel --presets latest summon.js | npx uglifyjs --compress --mangle > summon.min.js
 
