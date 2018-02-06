@@ -7,7 +7,7 @@ css :
 	sass --style=compressed --sourcemap=none summon.scss > summon.min.css
 
 js :
-	npx babel --presets latest summon.js | npx uglifyjs --compress --mangle > summon.min.js
+	npx babel --presets latest broken-link-modal.js summon.js | npx uglifyjs --compress --mangle > summon.min.js
 
 # assumes an SSH alias of "live" for the server where you want to put the script
 push :
