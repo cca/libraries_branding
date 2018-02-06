@@ -34,15 +34,15 @@ $(function() {
             <br/>Content Type: ${doc.content_type}
             <hr/>
             <div class="form-group">
-                <label for="email" class="col-sm-2">E-mail</label>
-                <div class="col-sm-10">
-                    <input name="email" type="email" class="form-control" style="height:34px;">
+                <label for="email" class="col-sm-2">Email</label>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <input name="email" type="email" class="form-control">
                 </div>
             </div>
             <div class="form-group">
                 <label for="comments" class="col-sm-2">Comments</label>
-                <div class="col-sm-10">
-                    <textarea name="comments" class="form-control" style="max-width:100%"></textarea>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <textarea name="comments" class="form-control"></textarea>
                 </div>
             </div>
             <input name="openurl" type="hidden" value="http://ey7mr5fu9x.search.serialssolutions.com?${doc.open_url}">
@@ -114,7 +114,7 @@ $(function() {
           var doc = angular.element(this).scope().doc;
           var type = doc.content_type;
           if (doc && type !== 'Book' && type !== 'Journal' && !doc.is_print) {
-            $(this).append('<span class="availability" style="margin-left:15px"><a class="availabilityLink reportBroken" href="#"><i class="fa fa-exclamation-triangle fa-fw"></i> Report Broken Link</a></span>');
+            $(this).append('<span class="availability" style="margin-left:1em"><a class="availabilityLink reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a></span>');
           }
         });
       });
