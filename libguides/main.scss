@@ -7,6 +7,13 @@ body {
     font-size: 18px;
 }
 
+// CCA web branding for headers
+.s-lib-box-content {
+    h3, h4 {
+        color: #0076A0;
+    }
+}
+
 // custom, responsive logo sizing
 #cca-header {
     cursor: pointer;
