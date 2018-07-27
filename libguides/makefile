@@ -1,10 +1,10 @@
 all : analytics js sass
 
 analytics :
-	npx babel --presets latest custom-analytics.js | npx uglifyjs --compress --mangle >> custom-analytics.min.js
+	npx babel --presets latest,minify custom-analytics.js > custom-analytics.min.js
 
 js :
-	npx babel --presets latest main.js | uglifyjs --compress --mangle >> main.min.js
+	npx babel --presets latest,minify main.js > main.min.js
 
 #  need to have sass installed globally
 sass :
