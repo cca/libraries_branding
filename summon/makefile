@@ -1,4 +1,4 @@
-all : build push
+all : build
 
 build : css js
 
@@ -8,7 +8,3 @@ css :
 
 js :
 	npx babel --presets latest,minify broken-link-modal.js summon.js > summon.min.js
-
-# assumes an SSH alias of "live" for the server where you want to put the script
-push :
-	rsync -avz summon.min.* live:~/wagtail/libraries/libraries/static/summon
