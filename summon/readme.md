@@ -20,3 +20,5 @@ Included `make` tasks:
 - `js` compiles ES6 to minified JavaScript
 - `build` does both of the above
 - `push` syncs the minified files to the libraries' web server
+
+**Custom panels have a 2040 character limit.** So if the code is getting particularly lengthy or complex, you'll need to work around that by abstracting out a section or rewriting it.
