@@ -11,8 +11,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
-    "babel-preset-minify": "^0.4.3",
-    "jshint": "^2.9.6"
+    "babel-preset-minify": "^0.5",
+    "jshint": "^2.10"
   },
   "dependencies": {}
 }
