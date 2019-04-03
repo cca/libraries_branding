@@ -1,0 +1,33 @@
+$font-family-sans-serif: 'Raleway', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-family-serif: 'Merriweather', 'Georgia', serif;
+$font-family-monospace: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace;
+// open source Google font equivalents of CCA brand fonts
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body,
+.s-lib-box-content .ui-widget {
+    font-family: $font-family-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: $font-family-monospace;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-sans-serif;
+}

@@ -1,0 +1,19 @@
+// custom, responsive logo sizing
+#cca-header {
+    cursor: pointer;
+    margin: 1em auto auto;
+    padding: 0;
+
+    .logo {
+        background: url("//libapps.s3.amazonaws.com/sites/2210/banner/libguide-logo-fa17.png") no-repeat;
+        background-position-y: 50%;
+        background-size: contain;
+        height: 81px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #cca-header .logo {
+        height: 51px
+    }
+}

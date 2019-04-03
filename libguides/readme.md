@@ -9,4 +9,4 @@ To change:
 
 For site-wide CSS settings, this guide tells you what the CSS classes are:
 
-http://support.springshare.com/libguides/lookandfeel/cssmaps-guides/assets
+https://support.springshare.com/libguides/cssmaps/
