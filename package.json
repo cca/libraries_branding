@@ -9,10 +9,16 @@
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-latest": "^6.24.1",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "babel-preset-minify": "^0.5",
-    "jshint": "^2.10"
+    "jshint": "^2.10.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "babel": {
+      "presets": [
+          "@babel/preset-env",
+          "minify"
+      ]
+  }
 }
