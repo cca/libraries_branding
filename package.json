@@ -12,13 +12,14 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-preset-minify": "^0.5",
-    "jshint": "^2.10.2"
+    "jshint": "^2.10.2",
+    "trash-cli": "^3.0.0"
   },
   "dependencies": {},
   "babel": {
-      "presets": [
-          "@babel/preset-env",
-          "minify"
-      ]
+    "presets": [
+      "@babel/preset-env",
+      "minify"
+    ]
   }
 }
