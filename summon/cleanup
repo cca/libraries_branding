@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-npx trash deletes.csv updates.csv koha.mrc
-mv -v cca-catalog* marc/

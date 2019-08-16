@@ -44,3 +44,7 @@ echo "run the command below to upload to Summon (the SFTP cmd is on your clipboa
 echo "pbpaste | sftp summon"
 
 set_color normal
+
+# cleanup
+npx trash deletes.csv updates.csv koha.mrc
+mv -v cca-catalog* marc/
