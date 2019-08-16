@@ -10,6 +10,22 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 - light gray `#e4e8eb` for "Header Background Color"
 - darker gray `#555` for the header link styles
 
+## Monthly Summon Deletions
+
+To delete records from Summon, I run the following on a monthly basis:
+
+```sh
+> # open our Koha report of deleted/suppressed records
+> # filling in the appropriate date parameter from .lastrun text file
+> ./kohareport.sh
+> # download report results as "deletes.csv"
+> ./upcat deletes
+> # the sftp command is copied to clipboard & "summon" is an SSH alias
+> pbpaste | sftp summon
+> # enter Summon SFTP password, upload happens, the deletes CSV is dated then
+> # archived in "marc" subdirectory, .lastrun is set to current date
+```
+
 ## Notes
 
 See Matthew Reidsma's [Summon work at GVSU](https://github.com/gvsulib/Summon-2.0-Scripts) for ideas.
