@@ -28,7 +28,7 @@ switch $type
 end
 
 # construct appropriate file name from info we have
-set newfilename cca-catalog-$type-$curdate.mrc
+set newfilename marc/cca-catalog-$type-$curdate.mrc
 
 set_color --bold
 echo "where's the MARC file at?"
@@ -36,15 +36,9 @@ set_color normal
 read --shell -c "/Users/ephetteplace/Code/libraries-branding/summon/$export" filename
 
 set_color --bold
-cp -v $filename $newfilename
+mv -v $filename $newfilename
 or exit 1
 
 echo "put $newfilename $type" | pbcopy
 echo "run the command below to upload to Summon (the SFTP cmd is on your clipboard)"
 echo "pbpaste | sftp summon"
-
-set_color normal
-
-# cleanup
-npx trash deletes.csv updates.csv koha.mrc
-mv -v cca-catalog* marc/
