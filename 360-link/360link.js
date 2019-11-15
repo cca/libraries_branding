@@ -48,7 +48,7 @@
         ['.hide-sidebar', 'collapse sidebar'],
         ['.sidebar-collapsed-clickable', 'expand sidebar'],
         ['#ulrichs-control', 'journal details'],
-        ['##source-control', 'database source list'],
+        ['#source-control', 'database source list'],
         ['#browse-link', 'browse journal'],
         ['#link-to-book-text', 'link to book'],
         ['#link-not-working', 'report a problem'],
