@@ -1,6 +1,31 @@
 // analytics tracking for 360 Link "1-click with sidebar"
 (function(jQuery) {
     'use strict';
+    // "Click this link..." just go directly to the link, bypass sidebar frame
+    // Poll to see if 360 Link scripts have finished & we have href on the DOM
+    let interval = setInterval(() => {
+        console.log('interval')
+        // when the applySelectedOption function of
+        // *.search.serialssolutions.com/alEJPStatic/js/newUI-sidebar.js
+        // has run it will .show() one of these containers & .hide() the other two
+        // we test to see if they all have style attributes
+        let styleAttrs = jQuery('#iframeContainer, #insecureContentContainer, #oneClickExcludeContainer')
+            .map((i, el) => el.getAttribute('style')).get()
+        if (styleAttrs.every(s => s !== null)) {
+            clearInterval(interval)
+            // redirect to "Click this link..." href if there is one
+            jQuery('#insecureContent, #oneClickExclude')
+                .each((i, el) => {
+                    let href = el.getAttribute('href')
+                    if (href) {
+                        el.textContent = 'Please wait a moment while we redirect you...'
+                        location = href
+                    }
+                })
+        }
+    }, 200)
+
+    // load analytics if we don't have them yet
     // jshint ignore:start
     if (!window.ga) {
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
