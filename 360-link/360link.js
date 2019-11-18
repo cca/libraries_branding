@@ -40,7 +40,7 @@
     let article = `"${$('.sidebar .title').text().trim()}". ${$('.sidebar .citation-data').text().trim()}`
         .replace(/\n/g, '').replace(/\s{2,}/g, ' ')
     function track (action) {
-        ga('send', 'event', 'sidebar', 'TEST - ' + action, article)
+        ga('send', 'event', 'sidebar', action, article)
     }
     // array selector-label pairs to track interaction
     [
