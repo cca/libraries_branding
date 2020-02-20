@@ -15,12 +15,10 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 To delete records from Summon, I run the following on a monthly basis:
 
 ```sh
-> # open our Koha report of deleted/suppressed records
-> # filling in the appropriate date parameter from .lastrun text file
-> ./kohareport.sh
-> # download report results as "deletes.csv"
-> ./upcat deletes
-> # the sftp command is copied to clipboard & "summon" is an SSH alias
+> # knows the last time I ran it via the .lastrun text file
+> ./summon-deletes.sh
+> # the report URL opens in Koha, sign in, download CSV & name it "deletes.csv"
+> # hit return & the sftp command is copied to clipboard. "summon" is an SSH alias
 > pbpaste | sftp summon
 > # enter Summon SFTP password, upload happens, the deletes CSV is dated then
 > # archived in "marc" subdirectory, .lastrun is set to current date
