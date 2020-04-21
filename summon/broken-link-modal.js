@@ -1,9 +1,7 @@
 /* Credit to Robert Hoyt of Fairfield University who provided this code */
 $(function() {
-  var modalLoaded = false;
-
   // Modal HTML
-  var modal = function (title, body, button) {
+  function modal(title, body, button) {
     return `<div class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -21,7 +19,7 @@ $(function() {
             </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->`;
+    </div><!-- /.modal -->`
   }
 
   // Modal Content
@@ -48,36 +46,35 @@ $(function() {
             <input name="openurl" type="hidden" value="http://ey7mr5fu9x.search.serialssolutions.com?${doc.open_url}">
             <input name="permalink" type="hidden" value="https://cca.summon.serialssolutions.com/#!/search?bookMark=${doc.bookmark}">
             <input type="hidden" name="type" value="${doc.content_type}">
-        </form>`;
+        </form>`
   }
 
-  //Open modal on click
-  $(document).on('click', '.reportBroken', function(e) {
-    e.preventDefault();
-    var doc = angular.element(e.currentTarget).parents('.ng-scope').scope().doc;
-    function addModal() {
-      var html = modal('Report Broken Link', prepareModalBody(doc), '<button type="button" class="btn btn-info submitBroken">Report Link</button>');
-      $('.modal').remove();
-      $('body').append(html);
-      $('.modal').modal();
-    }
-    if (!modalLoaded) {
-      $.getScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js').done(function() {
-        modalLoaded = true;
-        addModal()
-      });
-    } else {
-      addModal();
-    }
-  });
+  function addModal(doc) {
+    let html = modal('Report Broken Link', prepareModalBody(doc), '<button type="button" class="btn btn-info submitBroken">Report Link</button>')
+    $('.modal').remove()
+    $('body').append(html)
+    $('.modal').modal()
+  }
 
-  //Handle submission of modal
-  var sent = 0;
-  $(document).on('click', '.submitBroken', function() {
-    if (sent === 1) {
-      return false;
+  // Open modal on click
+  let modalLoaded = false
+  $(document).on('click', '.reportBroken', function(e) {
+    e.preventDefault()
+    let doc = angular.element(e.currentTarget).parents('.ng-scope').scope().doc
+    if (!modalLoaded) {
+      return $.getScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js').done(()=>{
+        modalLoaded = true
+        addModal(doc)
+      }).fail(() => console.error('Unable to load Bootstrap modal JS.'))
     }
-    sent = 1;
+    return addModal(doc)
+  })
+
+  // Handle submission of modal
+  let sent = 0
+  $(document).on('click', '.submitBroken', () => {
+    if (sent === 1) return
+    sent = 1
     // NOTE: this is being sent as POST body content, not JSON, for some reason
     $.ajax({
       headers: {'Accept': 'application/json', 'Content-Type': 'application/json; charset=utf-8'},
@@ -90,34 +87,30 @@ $(function() {
           'type': $('#brokenForm input[name="type"]').val(),
           'comments': $('#brokenForm textarea[name="comments"]').val(),
       }
-    }).done(function(d) {
-      $('.modal-body').html('<div class="alert alert-success">Successfully Submitted</div>');
-      setTimeout(function() {$('.modal').modal('hide');}, 3000);
-    }).fail(function(d) {
-      sent = 0;
-      alert('Could not submit.  Please Try again shortly.');
-    });
-  });
+  }).done(() => {
+      $('.modal-body').html('<div class="alert alert-success">Successfully Submitted</div>')
+      setTimeout(() => $('.modal').modal('hide'), 3000)
+  }).fail(() => {
+      sent = 0
+      alert('Could not submit.  Please Try again shortly.')
+    })
+  })
 
   // attach button to results in Summon, excluding books and journals
-  var mainMod = angular.module('summonApp');
-  var rootScope = angular.element('html').scope().$root;
-  rootScope.$on('apiSuccess',
-    function(scope, type) {
-      setTimeout(function() {
-        // broken link button
-        $('.Z3988').parent().each(function() {
-          if ($(this).text().indexOf('Report Broken') !== -1
-          || $(this).text().indexOf('Find Similar') !== -1) {
-            return;
-          }
-          var doc = angular.element(this).scope().doc;
-          var type = doc.content_type;
-          if (doc && type !== 'Book' && type !== 'Journal' && !doc.is_print) {
-            $(this).append('<span class="availability" style="margin-left:1em"><a class="availabilityLink reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a></span>');
-          }
-        });
-      });
-    }
-  );
-});
+  let mainMod = angular.module('summonApp') // @TODO unused variable?
+  let rootScope = angular.element('html').scope().$root
+  rootScope.$on('apiSuccess', function(scope) {
+    // broken link button
+    $('.Z3988').parent().each(function() {
+      let text = $(this).text()
+      if (text.match('Report Broken') || text.match('Find Similar')) {
+        return
+      }
+      let doc = angular.element(this).scope().doc
+      let type = doc.content_type
+      if (doc && type !== 'Book' && type !== 'Journal' && !doc.is_print) {
+        $(this).append('<span class="availability" style="margin-left:1em"><a class="availabilityLink reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a></span>')
+      }
+    })
+  })
+})
