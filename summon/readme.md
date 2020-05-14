@@ -28,11 +28,11 @@ To delete records from Summon, I run the following on a monthly basis:
 
 See Matthew Reidsma's [Summon work at GVSU](https://github.com/gvsulib/Summon-2.0-Scripts) for ideas.
 
-Included `make` tasks:
+Included `npm` scripts:
 
-- `css` compiles SASS to minified CSS
-- `js` compiles ES6 to minified JavaScript
-- `build` does both of the above
-- `push` syncs the minified files to the libraries' web server
+- `summon-css` compiles SASS to minified CSS
+- `summon-js` compiles ES6 to minified JavaScript
+- `summon-build` does both of the above
+- `summon-push` syncs the minified files to the libraries' web server
 
 **Custom panels have a 2040 character limit.** So if the code is getting particularly lengthy or complex, you'll need to work around that by abstracting out a section or rewriting it.
