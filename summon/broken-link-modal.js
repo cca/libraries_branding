@@ -106,7 +106,7 @@ $(function() {
       if (text.match('Report Broken') || text.match('Find Similar')) {
         return
       }
-      let doc = angular.element(this).scope().doc
+      let doc = angular.element(this).scope().document
       let type = doc.content_type
       if (doc && type !== 'Book' && type !== 'Journal' && !doc.is_print) {
         $(this).append('<span class="availability" style="margin-left:1em"><a class="availabilityLink reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a></span>')
