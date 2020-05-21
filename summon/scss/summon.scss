@@ -101,30 +101,33 @@ a.clearRefinements.customPrimaryLink {
 }
 
 // "apply" filter button
-a.btn.btn-primary.applyBtn.ng-binding {
-    color: white;
-    background-color: #69a74c;
-    border: solid #69a74c 1px;
+a.btn.btn-primary.applyBtn {
+    &.ng-binding {
+        background-color: #69a74c;
+        border: solid #69a74c 1px;
+        color: white;
+    }
+
+    // "apply" filter button color reversed on hover
+    &:hover {
+        background-color: #518837 !important;
+        border: solid #518837 1px !important;
+        color: white !important;
+    }
+
+    // "apply" filter button box shadow when active
+    &:active {
+        box-shadow: inset 0 5px 15px rgba(0,0,0,0.150);
+    }
+
+    // "apply" button when close....
+    &.ng-scope {
+        background-color: #69a74c;
+        border: solid #69a74c 1px;
+        color: white;
+    }
 }
 
-// "apply" filter button color reversed on hover
-a.btn.btn-primary.applyBtn:hover {
-    color: white !important;
-    background-color: #518837 !important;
-    border: solid #518837 1px !important;
-}
-
-// "apply" filter button box shadow when active
-a.btn.btn-primary.applyBtn:active {
-    box-shadow: inset 0 5px 15px rgba(0,0,0,0.150);
-}
-
-// "apply" button when close....
-a.btn.btn-primary.applyBtn.ng-scope {
-    color: white;
-    background-color: #69a74c;
-    border: solid #69a74c 1px;
-}
 
 // email input in "broken links" dialog
 input[name="email"]:invalid {
@@ -143,4 +146,13 @@ input[name="email"]:invalid {
 h3,
 .h3 {
     font-size: 120%;
+}
+
+// put "report broken link" on same line as Full Text Online
+.fullText .ng-scope {
+    float: left;
+
+    .availabilityLink {
+        padding-right: .5em;
+    }
 }
