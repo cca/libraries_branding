@@ -81,7 +81,7 @@ $(function() {
   let modalLoaded = false
   $(document).on('click', '.reportBroken', function(e) {
     e.preventDefault()
-    let doc = angular.element(e.currentTarget).parents('.ng-scope').scope().doc
+    let doc = angular.element(e.currentTarget).parents('.ng-scope').scope().document
     if (!modalLoaded) {
       return $.getScript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js').done(()=>{
         modalLoaded = true
