@@ -16,11 +16,11 @@
   "license": "ECL-2.0",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "babel-preset-minify": "^0.5.1",
-    "jshint": "^2.11.1",
-    "trash-cli": "^3.0.0"
+    "jshint": "^2.12.0",
+    "trash-cli": "^3.1.0"
   },
   "dependencies": {},
   "babel": {
