@@ -18,7 +18,7 @@ newfilename="marc/cca-catalog-${type}-${curdate}.mrc"
 echo "Download the 'Summon Deletes' report CSV, name it '${type}.csv', then hit return."
 read -p 'Hit return when finished (or type out full file path).' path
 path=${path:-$(pwd)/${type}.csv}
-mv -v ${path} ${newfilename} || exit 1
+mv -v "${path}" "${newfilename}" || exit 1
 
 echo "put ${newfilename} ${type}" | pbcopy
 echo "run the command below to upload to Summon (the SFTP cmd is on your clipboard)"
