@@ -58,22 +58,17 @@ $(function() {
 
   // run on loop, add "report broken link" to availability details for new docs
   function addReportLinks() {
-      let items = $('.Z3988').parent()
-      console.log(`(BLR) no. new items added to results: ${items.length}`)
-      items.each(function() {
-        let $item = $(this)
+      $('.documentSummary').each((i, el) => {
+        let $item = $(el)
         if ($item.find('.reportBroken').length || $item.text().match('Find Similar')) {
           return
         }
-        let doc = angular.element(this).scope().document
+        let doc = angular.element(el).scope().document
         // we used to check doc.content_type for "Journal" and not "Book" but this
         // didn't catch ebooks (e.g. Hathi Trust)
-        console.log(`(BLR) checking new item ${doc.full_title || '(no title)'}`)
-        if (doc && !doc.is_print && $(this).find('.availabilityLink').text().match('Full Text Online')) {
-          console.log('(BLR) full text online, appending "report broken link" to availability line')
-          return $(this).find('.availabilityFullText .fullText').append('<a class="availabilityLink reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a>')
+        if (doc && !doc.is_print && $item.find('.availabilityLink').text().match('Full Text Online')) {
+          return $item.find('.fullText').append('<a class="availabilityLink reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a>')
         }
-        return console.log('(BLR) not online')
       })
   }
 
