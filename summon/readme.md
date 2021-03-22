@@ -12,6 +12,10 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 
 ## Monthly Summon Deletions
 
+**NEW** (2021-03): I wrote a Python script "sd.py" that makes notifying Summon of deleted records even less interactive. I've performed one test but it's still relatively new. It would make sense to run this on a more advanced schedule via cron. It uses python3, requests, and pysftp and I have yet to write a Pipfile for it but probably should.
+
+---
+
 To delete records from Summon, I run the following on a monthly basis:
 
 ```sh
