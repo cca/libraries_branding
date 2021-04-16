@@ -36,6 +36,7 @@ with open('.password', 'r') as fh:
 with pysftp.Connection(hostname, username=username, password=password) as sftp:
     with sftp.cd('deletes'):
         sftp.put(csvfile)
+        print('Successfully uploaded deleted records to Summon FTP server.')
 
 # once we're successful write current date to file
 with open('.lastrun', 'w') as fh:
