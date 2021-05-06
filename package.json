@@ -19,10 +19,8 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.11.0",
     "babel-preset-minify": "^0.5.1",
-    "jshint": "^2.12.0",
-    "trash-cli": "^3.1.0"
+    "jshint": "^2.12.0"
   },
-  "dependencies": {},
   "babel": {
     "presets": [
       "@babel/preset-env",

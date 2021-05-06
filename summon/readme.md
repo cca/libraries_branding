@@ -2,7 +2,7 @@
 
 Customizations for the libraries' Summon discovery layer.
 
-The included `upcat` script helps with FTP-ing catalog updates to ProQuest. Afterwards, `cleanup` trashes downloaded CSVs (using npm's trash-cli) and archives data in the "marc" folder.
+The included `summon-deletes.sh` script helps with FTP-ing catalog updates to ProQuest and archiving data in the "marc" folder.
 
 We've also set a few [options](https://customize.summon.serialssolutions.com/settings) for custom colors:
 
