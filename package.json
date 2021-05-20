@@ -26,5 +26,8 @@
       "@babel/preset-env",
       "minify"
     ]
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0"
   }
 }
