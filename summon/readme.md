@@ -6,9 +6,9 @@ The included `summon-deletes.sh` script helps with FTP-ing catalog updates to Pr
 
 We've also set a few [options](https://customize.summon.serialssolutions.com/settings) for custom colors:
 
-- CCA teal `#00bfb3` for "Authentication Banner Background Color"
-- light gray `#e4e8eb` for "Header Background Color"
-- darker gray `#555` for the header link styles
+- CCA teal `#00bfb3` <span style="background:#00bfb3;">&nbsp;</span> for "Authentication Banner Background Color"
+- light gray `#e4e8eb` <span style="background:#e4e8eb;">&nbsp;</span> for "Header Background Color"
+- darker gray `#555` <span style="background:#555;">&nbsp;</span> for the header link styles
 
 ## Monthly Summon Deletions
 
