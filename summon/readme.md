@@ -2,8 +2,6 @@
 
 Customizations for the libraries' Summon discovery layer.
 
-The included `summon-deletes.sh` script helps with FTP-ing catalog updates to ProQuest and archiving data in the "marc" folder.
-
 We've also set a few [options](https://customize.summon.serialssolutions.com/settings) for custom colors:
 
 - CCA teal `#00bfb3` for "Authentication Banner Background Color"
@@ -12,21 +10,17 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 
 ## Monthly Summon Deletions
 
-**NEW** (2021-03): I wrote a Python script "sd.py" that makes notifying Summon of deleted records even less interactive. I've performed one test but it's still relatively new. It would make sense to run this on a more advanced schedule via cron. It uses python3, requests, and pysftp and I have yet to write a Pipfile for it but probably should.
-
----
-
-To delete records from Summon, I run the following on a monthly basis:
+**NEW** (2021-03): we use a Python 3 script "sd.py" to automate notifying Summon of deleted catalog records. It could run on a schedule via cron. It uses pipenv, requests, and pysftp. Example usage:
 
 ```sh
-> # knows the last time I ran it via the .lastrun text file
-> ./summon-deletes.sh
-> # the report URL opens in Koha, sign in, download CSV & name it "deletes.csv"
-> # hit return & the sftp command is copied to clipboard. "summon" is an SSH alias
-> pbpaste | sftp summon
-> # enter Summon SFTP password, upload happens, the deletes CSV is dated then
-> # archived in "marc" subdirectory, .lastrun is set to current date
+$ pipenv install # create environment & add dependencies, only the first time
+$ pipenv shell
+$ python sd.py
+14 records were deleted since 2021/04/16
+Successfully uploaded deleted records to Summon FTP server.
 ```
+
+The old method was the "summon-deletes.sh" script which is included as an artifact.
 
 ## Notes
 

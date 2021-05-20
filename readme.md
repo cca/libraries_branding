@@ -14,7 +14,7 @@ Requires `node`, then install dependencies in this folder with:
 > npm install
 ```
 
-Some of the shell scripts require basic UNIX tools like `rsync` and `ssh`. One of the Summon scripts uses [Fish shell](https://github.com/fish-shell/fish-shell).
+Some of the shell scripts require basic UNIX tools like `rsync` and `ssh`.
 
 # LICENSE
 
