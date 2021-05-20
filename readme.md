@@ -8,10 +8,9 @@ If you run `open $(cat url.txt)` in a subfolder, it should open to the page wher
 
 # Setup
 
-Requires `node` and `ruby`, then install dependencies in this folder with:
+Requires `node`, then install dependencies in this folder with:
 
 ```sh
-> gem install sass
 > npm install
 ```
 
