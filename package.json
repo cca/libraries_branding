@@ -7,6 +7,10 @@
     "url": "https://github.com/cca/libraries_branding.git"
   },
   "scripts": {
+    "libguides-build": "npm run libguides-css && npm run libguides-js && npm run libguides-analytics",
+    "libguides-css": "node-sass --output-style compressed libguides/main.scss > libguides/main.min.css",
+    "libguides-js": "babel --presets @babel/preset-env,minify libguides/main.js > libguides/main.min.js",
+    "libguides-analytics": "babel --presets @babel/preset-env,minify libguides/custom-analytics.js > libguides/custom-analytics.min.js",
     "summon-build": "npm run summon-css && npm run summon-js",
     "summon-css": "cd summon; node-sass --output-style=compressed scss/summon.scss > summon.min.css",
     "summon-js": "cd summon; babel --presets @babel/preset-env,minify broken-link-modal.js summon.js > summon.min.js",
@@ -19,15 +23,13 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.11.0",
     "babel-preset-minify": "^0.5.1",
-    "jshint": "^2.12.0"
+    "jshint": "^2.12.0",
+    "node-sass": "^6.0.0"
   },
   "babel": {
     "presets": [
       "@babel/preset-env",
       "minify"
     ]
-  },
-  "dependencies": {
-    "node-sass": "^6.0.0"
   }
 }
