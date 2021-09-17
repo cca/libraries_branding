@@ -1,0 +1,54 @@
+<style type="text/css">
+ .libraryh3lp a {
+   background: #721EA0;
+   border: 1px solid #c0c0c0;
+   border-bottom: 0;
+   border-radius: .5em .5em 0 0;
+   box-sizing: inherit;
+   color: #fff;
+   cursor: pointer;
+   font-size: 1.5em;
+   line-height:  1em;
+   padding: 0.5em;
+   position: fixed;
+   text-align: center;
+   text-decoration: none;
+   z-index: 100;
+   bottom: 0;
+   right: 10%;
+ }
+ .libraryh3lp a:hover {
+   padding-bottom: 1em;
+ }
+@media screen and (max-width: 400px) {
+  .libraryh3lp a {
+    font-size: 1.2em;
+  }
+}
+.libraryh3lp a span.close-lh3-chat-tab {
+  border: 1px solid #666;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  position: absolute;
+  padding: 0 6px;
+  right: -12px;
+  top: -12px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+</style>
+<script>
+  function closeLH3ChatTab(event) {
+    if (event) {
+        event.preventDefault()
+        event.stopPropagation()
+    }
+    document.cookie = "libraryh3lp-tab-shhhh=true; path=/"
+    document.querySelectorAll('.libraryh3lp').forEach(t => t.remove())
+  }
+  // Lifted from: https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
+  if ((document.cookie.replace(/(?:(?:^|.*;\s*)libraryh3lp-tab-shhhh\s*\=\s*([^;]*).*$)|^.*$/, '$1') === 'true')) {
+    closeLH3ChatTab()
+  }
+</script>
