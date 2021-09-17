@@ -8,20 +8,6 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 - light gray `#e4e8eb` for "Header Background Color"
 - darker gray `#555` for the header link styles
 
-## Monthly Summon Deletions
-
-**NEW** (2021-03): we use a Python 3 script "sd.py" to automate notifying Summon of deleted catalog records. It could run on a schedule via cron. It uses pipenv, requests, and pysftp. Example usage:
-
-```sh
-$ pipenv install # create environment & add dependencies, only the first time
-$ pipenv shell
-$ python sd.py
-14 records were deleted since 2021/04/16
-Successfully uploaded deleted records to Summon FTP server.
-```
-
-The old method was the "summon-deletes.sh" script which is included as an artifact.
-
 ## Notes
 
 See Matthew Reidsma's [Summon work at GVSU](https://github.com/gvsulib/Summon-2.0-Scripts) for ideas.
