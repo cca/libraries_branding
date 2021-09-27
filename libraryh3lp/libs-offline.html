@@ -44,11 +44,11 @@
         event.preventDefault()
         event.stopPropagation()
     }
-    document.cookie = "libraryh3lp-tab-shhhh=true; path=/"
+    window.sessionStorage.setItem('cca-libraryh3lp-hide', 'true')
     document.querySelectorAll('.libraryh3lp').forEach(t => t.remove())
   }
   // Lifted from: https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
-  if ((document.cookie.replace(/(?:(?:^|.*;\s*)libraryh3lp-tab-shhhh\s*\=\s*([^;]*).*$)|^.*$/, '$1') === 'true')) {
+  if (window.sessionStorage.getItem('cca-libraryh3lp-hide') === 'true') {
     closeLH3ChatTab()
   }
 </script>
