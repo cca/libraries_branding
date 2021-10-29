@@ -5,5 +5,8 @@ if [ -z $NS ]; then
 fi
 # using my k8 kubectl wrapper
 POD=$(k8 pod)
+DIR=/app/libraries/static/summon
+# must mkdir summon if it doesn't exist or the files are written to a file named "summon" instead
+kubectl -n$NS exec -it $POD -- mkdir -v $DIR
 # kubectl cp doesn't work with wildcards so we have to use xargs
-ls summon.min.* | xargs -I{} kubectl cp {} $NS/$POD:/app/libraries/static/summon/
+ls summon.min.* | xargs -I{} kubectl cp {} $NS/$POD:$DIR/
