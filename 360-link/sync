@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-FILE="360link.js"
-rsync -avz --progress ${FILE} live:~
-echo "I will now ssh into the webserver, run this command (it's on your clipboard):"
-cmd="sudo mv -v ${FILE} /opt/libraries_wagtail/libraries/static/"
-echo $cmd
-echo $cmd | pbcopy
-ssh live
