@@ -10,11 +10,8 @@
     "libguides-build": "npm run libguides-css && npm run libguides-js && npm run libguides-analytics",
     "libguides-css": "node-sass --output-style compressed libguides/main.scss > libguides/main.min.css",
     "libguides-js": "babel --presets @babel/preset-env,minify libguides/main.js --no-comments > libguides/main.min.js",
-    "libguides-analytics": "babel --presets @babel/preset-env,minify libguides/custom-analytics.js --no-comments > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics",
-    "summon-build": "npm run summon-css && npm run summon-js",
-    "summon-css": "cd summon; node-sass --output-style=compressed scss/summon.scss > summon.min.css",
-    "summon-js": "cd summon; babel --presets @babel/preset-env,minify broken-link-modal.js summon.js --no-comments > summon.min.js"
-  },
+    "libguides-analytics": "babel --presets @babel/preset-env,minify libguides/custom-analytics.js --no-comments > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics"
+},
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
