@@ -13,8 +13,7 @@
     "libguides-analytics": "babel --presets @babel/preset-env,minify libguides/custom-analytics.js --no-comments > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics",
     "summon-build": "npm run summon-css && npm run summon-js",
     "summon-css": "cd summon; node-sass --output-style=compressed scss/summon.scss > summon.min.css",
-    "summon-js": "cd summon; babel --presets @babel/preset-env,minify broken-link-modal.js summon.js --no-comments > summon.min.js",
-    "summon-sync": "cd summon; scp summon.min.js summon.min.css live:/opt/libraries_wagtail/libraries/static/summon"
+    "summon-js": "cd summon; babel --presets @babel/preset-env,minify broken-link-modal.js summon.js --no-comments > summon.min.js"
   },
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",

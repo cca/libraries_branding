@@ -17,6 +17,7 @@ Included `npm` scripts:
 - `summon-css` compiles SASS to minified CSS
 - `summon-js` compiles ES6 to minified JavaScript
 - `summon-build` does both of the above
-- `summon-push` syncs the minified files to the libraries' web server
+
+Running the `./sync` scripts syncs the minified files (for all branding folders) to the libraries' web server. It relies on Eric's `k8` kubectl wrapper and syncs to dev/prod based on what `NS` namespace env var you use.
 
 **Custom panels have a 2040 character limit.** So if the code is getting particularly lengthy or complex, you'll need to work around that by abstracting out a section or rewriting it.
