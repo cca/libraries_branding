@@ -10,8 +10,9 @@
     "libguides-build": "npm run libguides-css && npm run libguides-js && npm run libguides-analytics",
     "libguides-css": "node-sass --output-style compressed libguides/main.scss > libguides/main.min.css",
     "libguides-js": "babel --presets @babel/preset-env,minify libguides/main.js --no-comments > libguides/main.min.js",
-    "libguides-analytics": "babel --presets @babel/preset-env,minify libguides/custom-analytics.js --no-comments > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics"
-},
+    "libguides-analytics": "babel --presets @babel/preset-env,minify libguides/custom-analytics.js --no-comments > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics",
+    "test": "eslint libguides/*.js"
+  },
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
@@ -19,7 +20,7 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.11.0",
     "babel-preset-minify": "^0.5.1",
-    "jshint": "^2.12.0",
+    "eslint": "^8.1.0",
     "node-sass": "^6.0.0"
   },
   "babel": {
