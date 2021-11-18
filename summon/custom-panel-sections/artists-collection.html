@@ -10,12 +10,11 @@
     <br>
     <a href="https://library.cca.edu/cgi-bin/koha/opac-search.pl?q=an:513033"> → Browse the full list of titles</a>
 </section>
-
 <script>
       // get all the elements with "randomItem" CSS class
-      var elements = document.getElementsByClassName("panelImage");
+      let e = document.getElementsByClassName("panelImage")
       // get random number in integer from 0 to elements' length minus 1
-      var random = Math.floor(Math.random() * elements.length);
+        , r = Math.floor(Math.random() * e.length);
       // make only one of the elements visible
-      elements[random].classList.remove('hidden');
+      e[r] && e[r].classList.remove('hidden');
 </script>
