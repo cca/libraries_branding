@@ -7,7 +7,7 @@
     <a href="https://library.cca.edu/cgi-bin/koha/opac-shelves.pl?op=view&shelfnumber=6&sortfield=title"> → View in the Library Catalog</a>
 </section>
 <script>
-var e = document.getElementsByClassName("panelImage"),
+let e = document.getElementsByClassName("panelImage"),
     r = Math.floor(Math.random() * e.length);
-e[r].classList.remove("hidden");
+e[r] && e[r].classList.remove("hidden");
 </script>
