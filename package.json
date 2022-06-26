@@ -16,11 +16,11 @@
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.11.0",
-    "babel-preset-minify": "^0.5.1",
-    "eslint": "^8.1.0",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "babel-preset-minify": "^0.5.2",
+    "eslint": "^8.18.0",
     "node-sass": "^7.0.1"
   },
   "babel": {
