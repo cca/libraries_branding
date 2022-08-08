@@ -1,6 +1,6 @@
 # 360 Core (e-journals) Branding
 
-**Defunct** - this uused to be the styling of our "E-Journal Portal" but we no longer use it as the "E-Journal Portal 2.0" looks OK as is and so few users visit this site (it's largely redundant with Summon) that it's not worth customizing.
+**Defunct** - this used to be the styling of our "E-Journal Portal" but we no longer use it as the "E-Journal Portal 2.0" looks OK as is and so few users visit this site (it's largely redundant with Summon) that it's not worth customizing.
 
 ## old Notes
 
