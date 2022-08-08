@@ -6,16 +6,16 @@ Uses Eric's [portable header](https://github.com/phette23/portable-header) proje
 
 If you run `open $(cat url.txt)` in a subfolder, it should open to the page where you perform the customization. You'll need to login. Credentials are listed in the password vault or library wiki.
 
-# Setup
+## Setup
 
 Requires `node`, then install dependencies in this folder with:
 
 ```sh
-> npm install
+> pnpm install
 ```
 
-Some of the shell scripts require basic UNIX tools like `rsync` and `ssh`.
+You could also simply use npm but the Libraries use [pnpm](https://pnpm.io/) for their node projects.
 
-# LICENSE
+## LICENSE
 
 [ECL Version 2.0](https://opensource.org/licenses/ECL-2.0)
