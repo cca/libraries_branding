@@ -1,28 +1,24 @@
-<h2 class="libraryname">Simpson Library (SF)</h2>
+<h2 class="libraryname">Simpson Library</h2>
 <ul class="Simpson-hrs">Loading hours data...</ul>
 
-<h2 class="libraryname">Meyer Library (Oakland)</h2>
-<p>Permanently closed.</p>
-
-<h2 class="libraryname">Materials Library (SF)</h2>
+<h2 class="libraryname">Materials Library</h2>
 <ul class="Materials-hrs"><li>Loading hours data...</li></ul>
 
 <script>
-let today = Intl.DateTimeFormat('en-US', { weekday: 'long'}).format(new Date())
-let week = [['mon', 'Monday'], ['tue', 'Tuesday'], ['wed', 'Wednesday'], ['thu', 'Thursday'], ['fri', 'Friday'], ['sat', 'Saturday'], ['sun', 'Sunday']]
-let format = (day, hrs) => {
+const today = Intl.DateTimeFormat('en-US', { weekday: 'long'}).format(new Date())
+    , week = [['mon', 'Monday'], ['tue', 'Tuesday'], ['wed', 'Wednesday'], ['thu', 'Thursday'], ['fri', 'Friday'], ['sat', 'Saturday'], ['sun', 'Sunday']]
+    , format = (day, hrs) => {
     // highlight current weekday in bold
     if (day === today) {
         return `<li><b>${day} ${hrs}</b>`
     }
     return `<li>${day} ${hrs}`
-}
+};
 let gethrs = (library) => {
-    let root = 'https://libraries.cca.edu/hours/?format=json'
-    fetch(`${root}&library=${library}`)
+    fetch(`https://libraries.cca.edu/hours/?format=json&library=${library}`)
         .then(r => r.json())
         .then(data => {
-            let list = document.querySelector(`.${library}-hrs`)
+            const list = document.querySelector(`.${library}-hrs`)
 
             if (!data.error) {
                 // empty out current hrs list
