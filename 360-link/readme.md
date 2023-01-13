@@ -2,7 +2,7 @@
 
 To change:
 
-- Login to Serials Solution Client Center at http://clientcenter.serialssolutions.com/CC/Login/Default.aspx
+- Login to Serials Solution Client Center at https://clientcenter.serialssolutions.com/CC/Login/Default.aspx
 - Select _Administration Console_ underneath _360 Link_
 - Select the _Link 2.0_ tab
 - Select _Non-Sidebar Pages Branding Options_
