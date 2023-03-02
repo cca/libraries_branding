@@ -1,0 +1,16 @@
+<section>
+    <img src="https://storage.googleapis.com/libraries-lib-production/images/cs5.max-800x600.jpg" alt="" height="134" width="134" class="hidden panelImage">
+    <img src="https://storage.googleapis.com/libraries-lib-production/images/cs4.max-800x600.jpg" alt="" height="134" width="134" class="hidden panelImage">
+    <img src="https://storage.googleapis.com/libraries-lib-production/images/cs3.max-800x600.jpg" alt="" height="134" width="134" class="hidden panelImage">
+    <img src="https://storage.googleapis.com/libraries-lib-production/images/cs1.max-800x600.jpg" alt="" height="134" width="134" class="hidden panelImage">
+    <p><a href="https://creativestudy.com/cca">CreativeStudy</a> is a resource designed to help artists and designers navigate the business that's crucial to a successful career. Their online courses explain the ecosystem of funding, finance, law, and more in a way that's approachable, non-judgmental, and applicable to creatives and freelancers who often find themselves torn between producing their work and managing the business side of their careers.</p>
+    <p>CCA community members have free access to CreativeStudy's online learning platform.</p>
+</section>
+<script>
+      // get all the elements with "panelImage" CSS class
+      let e = document.getElementsByClassName("panelImage")
+      // get random number in integer from 0 to elements' length minus 1
+        , r = Math.floor(Math.random() * e.length);
+      // make only one of the elements visible
+      e[r] && e[r].classList.remove('hidden');
+</script>
