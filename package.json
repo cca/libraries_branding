@@ -20,7 +20,7 @@
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "eslint": "^8.42.0",
-    "node-sass": "^7.0.3"
+    "node-sass": "^9.0.0"
   },
   "babel": {
     "presets": [
