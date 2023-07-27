@@ -11,7 +11,7 @@
     "globals": {
         "jQuery": "readonly",
         "$": "readonly",
-        "dataLayer": "true"
+        "dataLayer": "writable"
     },
     "ignorePatterns": [ "*.min.js" ],
     "rules": {
@@ -51,7 +51,7 @@
         "computed-property-spacing": "error",
         "consistent-return": "error",
         "consistent-this": "error",
-        "curly": "error",
+        "curly": ["error", "multi-line", "consistent"],
         "default-case": "error",
         "default-case-last": "error",
         "default-param-last": "error",
@@ -95,7 +95,7 @@
         "max-params": "off",
         "max-statements": "error",
         "max-statements-per-line": "off",
-        "multiline-comment-style": "error",
+        "multiline-comment-style": "off",
         "multiline-ternary": "error",
         "new-cap": "error",
         "new-parens": "off",
