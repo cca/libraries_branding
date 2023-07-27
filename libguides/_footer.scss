@@ -1,0 +1,10 @@
+$lg-footer-bg: #f5f5f5; // color of .s-lib-footer
+
+// our footer html
+footer {
+    background-color: $lg-footer-bg;
+}
+
+.s-lib-footer {
+    padding-top: 5px;
+}
