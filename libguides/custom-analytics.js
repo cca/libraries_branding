@@ -20,11 +20,10 @@ let gae = (category, label, value) => {
 }
 
 // special event tracking for A-Z list
-if (location.pathname.match('/az.php')) {
-    $('#s-lg-az-content').on('click', '.s-lg-az-result-title a', ev => {
-        // 1 = first DB listed, closer to 0 is lowest along the list
-        let num_dbs = $('.s-lg-az-result-title a').length
-        let ranking =   (num_dbs - $('.s-lg-az-result-title a').index(ev.target)) * 100 / num_dbs
+if (location.pathname.match('/az/databases')) {
+    $('#s-lg-az-content').on('click', '.az-item h4 a', ev => {
+        // 1 = first DB listed, higher is further from top
+        let ranking = $('.az-item h4 a').index(ev.target) + 1
         gae('DB Click', ev.target.href, ranking)
     })
 
@@ -34,22 +33,28 @@ if (location.pathname.match('/az.php')) {
     })
 
     // filters
-    $('#s-lg-az-filter-cols').on('blur change', 'select', ev => {
-        // use <select> ID to see which filter it is
-        let filter = $(ev.target).parent().find('label').text()
-        gae('Filter', filter)
+    $('#s-lg-az-filter-cols').on('blur change', 'select, input', ev => {
+        // use label to determine filter
+        let filter = $(ev.target).attr('aria-label')
+        if ($(ev.target).hasClass('s-lg-az-search')) filter = 'Search'
+        if (filter) gae('Filter', filter)
+    })
+
+    $('.s-lg-az-reset').on('click', () => {
+        gae('Filter', 'Clear Filter')
     })
 
     // clear all filters button
+    // this doesn't seem to be visible anymore but still exists in the DOM
     $('#s-lg-az-reset').on('click', () => {
         gae('Filter', 'Clear Filters/Browse All Databases')
     })
 
     // popular & new/trial DBs
-    $('#s-lg-az-popular').on('click', '.s-lg-az-result-title a', ev => {
+    $('#s-lg-az-popular').on('click', 'h5 a', ev => {
         gae('Popular DB Click', ev.target.href)
     })
-    $('#s-lg-az-trials-div').on('click', '.s-lg-az-result-title a', ev => {
+    $('#s-lg-az-trials').on('click', 'h5 a', ev => {
         gae('New / Trial DB Click', ev.target.href)
     })
 }
