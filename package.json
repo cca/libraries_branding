@@ -1,5 +1,6 @@
 {
   "name": "libraries-branding",
+  "type": "module",
   "version": "1.0.0",
   "description": "A lot of the library's third-party products provide some modest custom branding opportunities. This repository simply collects header/footer HTML, styles, widgets, etc.",
   "repository": {
@@ -11,7 +12,7 @@
     "libguides-css": "sass --style compressed libguides/main.scss > libguides/main.min.css",
     "libguides-js": "babel --minified --compact --no-comments libguides/main.js > libguides/main.min.js",
     "libguides-analytics": "babel --minified --compact --no-comments libguides/custom-analytics.js > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics",
-    "test": "eslint libguides/*.js"
+    "test": "eslint libguides/*.js --cache"
   },
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
@@ -19,7 +20,8 @@
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
-    "eslint": "^8.57.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
     "sass": "^1.77.8"
   },
   "babel": {

@@ -2,3 +2,4 @@ node_modules/
 *.min.js
 *.min.css
 libguides/custom-analytics.html
+.eslintcache
