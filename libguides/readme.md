@@ -10,3 +10,5 @@ To change:
 - If CSS or JS changes, use `make` to build & minify the code & then upload it under **Upload Customization Files** on the [Custom JS/CSS](https://cca.libapps.com/libguides/lookfeel.php?action=1) tab
 
 A-Z has its own new ("beta") "Look & Feel" UI which also needs to be updated.
+
+The new UI can use [page-footer.html](./page-footer.html) because it has an updated Bootstrap for us to build with. The old UI uses a minimal [simple-footer.html](./simple-footer.html).
