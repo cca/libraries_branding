@@ -14,7 +14,7 @@ $(document).on('click', '#s-lg-index-subject-btn', () => {
                 // Get the number of guides in this subject
                 let guides = parseInt(panel.find('.badge').text())
 
-                 // If there is only one guide, change the link
+                // If there is only one guide, change the link
                 if (guides === 1) {
                     // Get the link to the guide
                     let newLink = panel.find('.panel-collapse')

@@ -1,7 +1,7 @@
 // requires gtag.js (see `npm run libguides-analytics` command)
 window.dataLayer = window.dataLayer || []
 function gtag(){
-    dataLayer.push(arguments)
+    window.dataLayer.push(arguments)
 }
 gtag('js', new Date())
 gtag('config', 'UA-18459158-3', {
