@@ -1,5 +1,7 @@
 # 360 Link Branding
 
+Since we do not use the 360 Link sidebar, these HTML snippets only appear when a user tries to access an article we do not have access to via our link resolver, e.g. by using the "Add results beyond your library's collection" option in Summon. Here is [an example page](https://ey7mr5fu9x.search.serialssolutions.com/?genre=article&id=pmid:123456).
+
 To change:
 
 - Login to Serials Solution Client Center at https://clientcenter.serialssolutions.com/CC/Login/Default.aspx
