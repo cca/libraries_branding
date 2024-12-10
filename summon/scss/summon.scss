@@ -19,7 +19,6 @@
 // links in formatted citation lists make copy-pasting difficult
 // to test: bookmark multiple articles, go to list, choose a
 // citation style, links appear on right
-
 li[ng-repeat='citation in citations'] a {
     display: none !important;
 }
