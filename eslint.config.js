@@ -10,6 +10,7 @@ export default [
                 ...globals.browser,
                 jQuery: 'readonly',
                 $: 'readonly',
+                angular: 'readonly',
             },
             sourceType: 'module'
         },
