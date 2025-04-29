@@ -1,9 +1,10 @@
 <style type="text/css">
  .libraryh3lp a {
    background: #721EA0;
-   border: 1px solid #c0c0c0;
    border-bottom: 0;
    border-radius: .5em .5em 0 0;
+   border: 1px solid #c0c0c0;
+   bottom: 0;
    box-sizing: inherit;
    color: #fff;
    cursor: pointer;
@@ -11,11 +12,10 @@
    line-height:  1em;
    padding: 0.5em;
    position: fixed;
+   right: 10%;
    text-align: center;
    text-decoration: none;
    z-index: 100;
-   bottom: 0;
-   right: 10%;
  }
  .libraryh3lp a:hover {
    padding-bottom: 1em;
@@ -26,16 +26,16 @@
   }
 }
 .libraryh3lp a .close-lh3-chat-tab {
-  border: 1px solid #666;
   background: #fff;
+  border-radius: 50%;
+  border: 1px solid #666;
   color: #000;
   font-size: 16px;
-  position: absolute;
+  font-weight: bold;
   padding: 0 6px;
+  position: absolute;
   right: -12px;
   top: -12px;
-  border-radius: 50%;
-  font-weight: bold;
 }
 </style>
 <script>
@@ -47,7 +47,6 @@
     window.sessionStorage.setItem('cca-libraryh3lp-hide', 'true')
     document.querySelectorAll('.libraryh3lp').forEach(t => t.remove())
   }
-  // Lifted from: https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
   if (window.sessionStorage.getItem('cca-libraryh3lp-hide') === 'true') {
     closeLH3ChatTab()
   }
