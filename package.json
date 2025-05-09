@@ -19,16 +19,21 @@
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
-    "@babel/cli": "^7.26.4",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "eslint": "^9.16.0",
-    "globals": "^15.13.0",
-    "sass": "^1.82.0"
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
+    "sass": "^1.87.0"
   },
   "babel": {
     "presets": [
-      ["@babel/preset-env", { "modules": false }]
+      [
+        "@babel/preset-env",
+        {
+          "modules": false
+        }
+      ]
     ]
   }
 }
