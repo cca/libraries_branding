@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "colors";
+
 // sass-lint:disable no-important
 // make left-side facets more obvious, #3
 // these styles copied from the base <a> style
@@ -8,10 +11,10 @@
 .moreFacetsContainer a > span.ng-binding,
 // for all facets below
 .facetName {
-    color: $link_blue;
+    color: colors.$link_blue;
 
     &:hover {
-        color: darken($link_blue, 20%);
+        color: color.adjust(colors.$link_blue, $lightness: -20%);
         text-decoration: underline;
     }
 }
@@ -25,17 +28,17 @@
     // "clear all" button hover
     .clearRefinementsContainerHeader .summonBtn:hover,
     .clearRefinementsContainerHeader .summonBtn:active {
-        background: $white !important;
-        border: outset 2px $cca-teal;
+        background: colors.$white !important;
+        border: outset 2px colors.$cca-teal;
 
         span {
-            color: $cca-teal !important;
+            color: colors.$cca-teal !important;
         }
     }
 
     // larger font for all "clear refinements" text
     .ng-binding {
-        color: $cca-teal;
+        color: colors.$cca-teal;
         font-weight: bold;
     }
 }
