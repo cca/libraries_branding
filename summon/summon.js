@@ -61,7 +61,7 @@
                 // we used to check doc.content_type for "Journal" and not "Book" but this
                 // didn't catch ebooks (e.g. Hathi Trust)
                 if (doc && !doc.is_print && $item.find('.availabilityLink, .customPrimaryLink').text().match('Full Text Online')) {
-                    return $item.find('.fullText').append('<a class="availabilityLink summonBtn reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a>')
+                    return $item.find('.availBlock div').append('<a class="availabilityLink summonBtn reportBroken" href="#"><i class="uxf-icon uxf-alert"></i> Report Broken Link</a>')
                 }
             })
         }
