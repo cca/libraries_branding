@@ -1,6 +1,5 @@
 (function () {
-    /* Credit to Robert Hoyt of Fairfield University who provided this code */
-    // eslint-disable-next-line no-unused-vars
+    // Credit to Robert Hoyt of Fairfield University who provided this code
     function brokenLinkReports() {
         // Modal HTML
         function prepareModalBody(doc) {

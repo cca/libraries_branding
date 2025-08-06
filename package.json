@@ -14,17 +14,18 @@
     "libguides-analytics": "babel --minified --compact --no-comments libguides/custom-analytics.js > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics",
     "summon-css": "sass --style compressed summon/scss/summon.scss | pbcopy && open $(cat summon/url.txt)",
     "summon-js": "babel --minified --compact --no-comments summon/summon.js | pbcopy && open $(cat summon/url.txt)",
-    "test": "eslint libguides/*.js --cache"
+    "test": "eslint libguides/*.js summon/*.js --cache"
   },
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/core": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
-    "eslint": "^9.26.0",
-    "globals": "^16.1.0",
-    "sass": "^1.87.0"
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "sass": "^1.90.0"
   },
   "babel": {
     "presets": [
