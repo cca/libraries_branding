@@ -1,0 +1,14 @@
+@use 'colors';
+
+.home {
+    .header-searchbox-container h2 {
+        display: none;
+    }
+    .linked-cards {
+        margin: 0 0 2em;
+
+        .title {
+            background-color: colors.$black;
+        }
+    }
+}

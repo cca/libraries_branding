@@ -102,7 +102,7 @@
                 setTimeout(() => $('.modal').modal('hide'), 3000)
             }).fail(() => {
                 sent = 0
-                alert('Could not submit.  Please Try again shortly.')
+                alert('Could not submit. Please Try again shortly.')
             })
         })
 
