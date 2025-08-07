@@ -12,8 +12,10 @@
     "libguides-css": "sass --style compressed libguides/main.scss > libguides/main.min.css",
     "libguides-js": "babel --minified --compact --no-comments libguides/main.js > libguides/main.min.js",
     "libguides-analytics": "babel --minified --compact --no-comments libguides/custom-analytics.js > libguides/custom-analytics.min.js && echo '<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-18459158-3\"></script><script>' > libguides/custom-analytics.html && cat libguides/custom-analytics.min.js >> libguides/custom-analytics.html && echo '</script>' >> libguides/custom-analytics.html && cat libguides/custom-analytics.html | pbcopy && open https://cca.libapps.com/libguides/settings/analytics",
-    "summon-css": "sass --style compressed summon/scss/summon.scss | pbcopy && open $(cat summon/url.txt)",
-    "summon-js": "babel --minified --compact --no-comments summon/summon.js | pbcopy && open $(cat summon/url.txt)",
+    "sum-css": "sass --style compressed summon/scss/summon.scss | pbcopy && open $(cat summon/url.txt)",
+    "sum-pre-css": "sass summon/scss/summon.scss | pbcopy && open $(cat summon/preview-url.txt)",
+    "sum-js": "babel --minified --compact --no-comments summon/summon.js | pbcopy && open $(cat summon/url.txt)",
+    "sum-pre-js": "babel summon/summon.js | pbcopy && open $(cat summon/preview-url.txt)",
     "test": "eslint libguides/*.js summon/*.js --cache"
   },
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
