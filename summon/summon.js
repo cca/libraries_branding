@@ -112,14 +112,5 @@
         rootScope.$on('apiSuccess', () => setTimeout(addReportLinks, 500))
     }
 
-    function main() {
-        // adjust main logo size/spacing on large screens
-        const logo = document.querySelector('div[size="large"] .logo')
-        if (logo) logo.setAttribute('src', 'https://libapps.s3.amazonaws.com/sites/2210/banner/libguide-logo-fa17.png')
-
-        brokenLinkReports()
-    }
-
-    // logo is loaded asynchronously, so wait for it to appear
-    setTimeout(main, 500)
+    setTimeout(brokenLinkReports, 500)
 })()

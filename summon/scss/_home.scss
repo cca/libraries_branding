@@ -1,9 +1,19 @@
 @use 'colors';
 
 .home {
-    .header-searchbox-container h2 {
-        display: none;
+    .header-searchbox-container {
+        background-color: inherit;
+
+        h2 {
+                display: none;
+        }
     }
+
+    .img-responsive.logo {
+        margin: 4em auto;
+        max-width: 500px;
+    }
+
     .linked-cards {
         margin: 0 0 2em;
 
