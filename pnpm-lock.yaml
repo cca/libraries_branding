@@ -27,8 +27,8 @@ importers:
         specifier: ^16.5.0
         version: 16.5.0
       sass:
-        specifier: ^1.94.0
-        version: 1.94.0
+        specifier: ^1.97.0
+        version: 1.97.0
 
 packages:
 
@@ -1146,8 +1146,8 @@ packages:
     engines: {node: '>= 0.4'}
     hasBin: true
 
-  sass@1.94.0:
-    resolution: {integrity: sha512-Dqh7SiYcaFtdv5Wvku6QgS5IGPm281L+ZtVD1U2FJa7Q0EFRlq8Z3sjYtz6gYObsYThUOz9ArwFqPZx+1azILQ==}
+  sass@1.97.0:
+    resolution: {integrity: sha512-KR0igP1z4avUJetEuIeOdDlwaUDvkH8wSx7FdSjyYBS3dpyX3TzHfAMO0G1Q4/3cdjcmi3r7idh+KCmKqS+KeQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2502,7 +2502,7 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  sass@1.94.0:
+  sass@1.97.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.4
