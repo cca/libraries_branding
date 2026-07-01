@@ -5,9 +5,10 @@ See [Customizing the look & feel of your LibGuides system](https://ask.springsha
 To change:
 
 - Login to LibApps at https://cca.libapps.com/libapps/login.php?site_id=2210
-- Go to Admin > Look & Feel
+- Go to LibGuides > Admin > [Look & Feel](https://cca.libapps.com/libguides/settings/lookfeel)
 - Edit the appropriate tab & section, e.g. "Page Footer", then Save
-- If CSS or JS changes, use `make` to build & minify the code & then upload it under **Upload Customization Files** on the [Custom JS/CSS](https://cca.libapps.com/libguides/lookfeel.php?action=1) tab
+- If CSS or JS changes, use `npm run libguides-build` to build & minify the code
+- You can either copy-paste it within `<script>` or `<style>` tags in the **Custom CSS/JS** sections or upload it under **Customization Files** on the **Custom JS/CSS** tab (_do not do both_)
 
 A-Z has its own new ("beta") "Look & Feel" UI which also needs to be updated.
 
