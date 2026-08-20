@@ -10,6 +10,8 @@ We've also set a few [options](https://customize.summon.serialssolutions.com/set
 
 ## Custom JavaScript
 
+**Update 2026-08-20**: We have disabled the "report a broken link" feature because after Eric leaves there will not be the bandwidth or expertise to respond to the reports. The code is still here, but the "JavaScript Code" under the "Summon 2.0 External Script" setting has been removed.
+
 Summon lets us load custom JavaScript and CSS under the "[Summon 2.0 External Script](https://customize.summon.serialssolutions.com/settings#Summon20ExternalScript)" settings. We used to have to host a JS file which did all this on libraries.cca.edu but now we can paste our code directly into the admin site. Our JS provides our "broken link" reporting which goes to the [Summon Broken Links](https://docs.google.com/spreadsheets/d/1BwLD3ERky-FkSAdwGpRrvZ3MwD6uV0kKpPlJERgLSA0/edit?gid=879487924#gid=879487924) spreadsheet.
 
 ## NPM Scripts

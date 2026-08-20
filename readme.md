@@ -11,7 +11,7 @@ If you run `open $(cat url.txt)` in a subfolder, it should open to the page wher
 Requires `node`, then install dependencies in this folder with:
 
 ```sh
-> pnpm install
+pnpm install
 ```
 
 You could also simply use npm but the Libraries use [pnpm](https://pnpm.io/) for their node projects.
